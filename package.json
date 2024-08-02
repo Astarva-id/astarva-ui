@@ -1,6 +1,6 @@
 {
   "name": "astarva-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/astarva-ui.umd.js",
   "module": "dist/astarva-ui.es.js",
   "types": "dist/types/index.d.ts",
@@ -9,9 +9,10 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-types": "tsc --emitDeclarationOnly"
   },
   "peerDependencies": {
     "react": "^18.3.1",
@@ -33,7 +34,6 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
-    "vite-plugin-dts": "^2.0.0"
-  },
-  "dependencies": {}
+    "vite-plugin-dts": "^2.3.0"
+  }
 }

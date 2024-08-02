@@ -1,20 +1,21 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
 import dts from "vite-plugin-dts";
+import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     dts({
       insertTypesEntry: true,
+      tsConfigFilePath: path.resolve(__dirname, "tsconfig.json"),
+      outputDir: path.resolve(__dirname, "dist/types"),
     }),
   ],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "AstarvaUI",
+      name: "Astarva-UI",
       formats: ["es", "umd"],
       fileName: (format) => `astarva-ui.${format}.js`,
     },
