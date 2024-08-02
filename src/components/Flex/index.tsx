@@ -43,6 +43,6 @@ const Flex: FlexComponent = React.forwardRef(
     { ...props }: PolymorphFlexProps<C>,
     ref?: PolymorphicRef<C>,
   ) => <StyledFlex ref={ref} {...props} />
-) as FlexComponent
+) as unknown as FlexComponent
 
 export default Flex

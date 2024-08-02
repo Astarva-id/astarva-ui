@@ -37,6 +37,6 @@ const Box: BoxComponent = React.forwardRef(
   <C extends React.ElementType = 'div'>(
     props: PolymorphBoxProps<C>,
     ref?: PolymorphicRef<C>,
-  ) => <StyledBox ref={ref} {...props} />) as BoxComponent
+  ) => <StyledBox ref={ref} {...props} />) as unknown as BoxComponent
 
 export default Box
