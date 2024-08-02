@@ -1,7 +1,12 @@
 {
   "name": "astarva-ui",
-  "version": "1.0.2",
-  "type": "module",
+  "version": "1.0.3",
+  "main": "dist/astarva-ui.umd.js",
+  "module": "dist/astarva-ui.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -28,5 +33,8 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "vite-plugin-dts": "4.0.0-beta.2"
   }
 }
