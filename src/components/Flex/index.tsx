@@ -14,7 +14,7 @@ import {
   flex,
 } from 'styled-system'
 import { PolymorphicRef } from '../Box/Box.types'
-import { PolymorphFlexProps, FlexProps, FlexComponent } from './Flex.types'
+import { PolymorphFlexProps, FlexProps } from './Flex.types'
 import { getGapUtils } from './utils'
 import { overrideColorConfig } from '@utils/globals'
 
@@ -38,11 +38,11 @@ const StyledFlex: React.FC<PolymorphFlexProps<React.ElementType>> = styled.div<
   ${flex}
 `
 
-const Flex: FlexComponent = React.forwardRef(
+const Flex = React.memo(React.forwardRef(
   <C extends React.ElementType = 'div'>(
     { ...props }: PolymorphFlexProps<C>,
     ref?: PolymorphicRef<C>,
   ) => <StyledFlex ref={ref} {...props} />
-) as unknown as FlexComponent
+));
 
 export default Flex

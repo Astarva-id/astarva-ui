@@ -13,7 +13,7 @@ import {
   flex,
 } from 'styled-system'
 
-import type { PolymorphBoxProps, BoxProps, PolymorphicRef, BoxComponent } from './Box.types'
+import type { PolymorphBoxProps, BoxProps, PolymorphicRef } from './Box.types'
 import { overrideColorConfig } from '@utils/globals'
 
 const StyledBox: React.FC<PolymorphBoxProps<React.ElementType>> = styled.div<
@@ -33,10 +33,11 @@ const StyledBox: React.FC<PolymorphBoxProps<React.ElementType>> = styled.div<
   box-sizing: ${(props) => props.boxSizing};
 `
 
-const Box: BoxComponent = React.forwardRef(
+const Box = React.memo(React.forwardRef(
   <C extends React.ElementType = 'div'>(
     props: PolymorphBoxProps<C>,
     ref?: PolymorphicRef<C>,
-  ) => <StyledBox ref={ref} {...props} />) as unknown as BoxComponent
+  ) => <StyledBox ref={ref} {...props} />
+));
 
 export default Box
