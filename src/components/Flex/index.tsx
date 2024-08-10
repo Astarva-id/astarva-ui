@@ -38,11 +38,11 @@ const StyledFlex: React.FC<PolymorphFlexProps<React.ElementType>> = styled.div<
   ${flex}
 `
 
-const Flex = React.memo(React.forwardRef(
+const Flex = React.forwardRef(
   <C extends React.ElementType = 'div'>(
     { ...props }: PolymorphFlexProps<C>,
     ref?: PolymorphicRef<C>,
   ) => <StyledFlex ref={ref} {...props} />
-));
+)
 
 export default Flex

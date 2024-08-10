@@ -33,11 +33,10 @@ const StyledBox: React.FC<PolymorphBoxProps<React.ElementType>> = styled.div<
   box-sizing: ${(props) => props.boxSizing};
 `
 
-const Box = React.memo(React.forwardRef(
+const Box = React.forwardRef(
   <C extends React.ElementType = 'div'>(
     props: PolymorphBoxProps<C>,
     ref?: PolymorphicRef<C>,
-  ) => <StyledBox ref={ref} {...props} />
-));
+  ) => <StyledBox ref={ref} {...props} />)
 
 export default Box
