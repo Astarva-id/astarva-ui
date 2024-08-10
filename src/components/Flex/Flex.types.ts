@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BackgroundProps,
   BorderProps,
@@ -11,8 +12,6 @@ import {
 } from "styled-system";
 import OverrideColor from "@interfaces/OverrideColor.types";
 import { BoxSizing, CursorType } from "@interfaces/global";
-import { PolymorphicRef } from "@components/Box/Box.types";
-
 export interface FlexProps<C extends React.ElementType = React.ElementType>
   extends FlexboxProps,
     Omit<ColorProps, "color" | "bg" | "backgroundColor">,
@@ -42,11 +41,6 @@ export interface FlexProps<C extends React.ElementType = React.ElementType>
 export type PolymorphFlexProps<C extends React.ElementType> = FlexProps<C> &
   Omit<React.ComponentProps<C>, keyof FlexProps<C>>;
 
-type PolymorphicComponentPropWithRef<C extends React.ElementType> =
-  PolymorphFlexProps<C> & {
-    ref?: PolymorphicRef<C>;
-  };
-
-export type FlexComponent = <C extends React.ElementType = "div">(
-  props: PolymorphicComponentPropWithRef<C>
-) => React.ReactElement | null;
+export type FlexComponent = React.ForwardRefExoticComponent<
+  PolymorphFlexProps<React.ElementType> & React.RefAttributes<HTMLElement>
+>;
