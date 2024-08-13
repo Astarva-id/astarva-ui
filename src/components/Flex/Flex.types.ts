@@ -1,3 +1,5 @@
+import { BoxSizing, CursorType } from "@interfaces/global";
+import OverrideColor from "@interfaces/OverrideColor.types";
 import React from "react";
 import {
   BackgroundProps,
@@ -10,8 +12,6 @@ import {
   SpaceProps,
   TypographyProps,
 } from "styled-system";
-import OverrideColor from "@interfaces/OverrideColor.types";
-import { BoxSizing, CursorType } from "@interfaces/global";
 export interface FlexProps<C extends React.ElementType = React.ElementType>
   extends FlexboxProps,
     Omit<ColorProps, "color" | "bg" | "backgroundColor">,

@@ -1,22 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
-
+import { overrideColorConfig } from "@utils/globals";
+import React from "react";
+import styled from "styled-components";
 import {
-  space,
-  color,
-  layout,
-  flexbox,
   background,
   border,
+  color,
+  flex,
+  flexbox,
+  layout,
   position,
   shadow,
+  space,
   typography,
-  flex,
-} from 'styled-system'
-import { overrideColorConfig } from '@utils/globals'
-import { PolymorphicRef } from '../Box/Box.types'
-import { PolymorphFlexProps, FlexProps, FlexComponent } from './Flex.types'
-import { getGapUtils } from './utils'
+} from "styled-system";
+
+import { PolymorphicRef } from "../Box/Box.types";
+import { FlexComponent, FlexProps, PolymorphFlexProps } from "./Flex.types";
+import { getGapUtils } from "./utils";
 
 const StyledFlex: React.FC<PolymorphFlexProps<React.ElementType>> = styled.div<
   FlexProps<React.ElementType>
@@ -36,12 +36,12 @@ const StyledFlex: React.FC<PolymorphFlexProps<React.ElementType>> = styled.div<
   ${typography}
   ${overrideColorConfig}
   ${flex}
-`
+`;
 
 const Flex: FlexComponent = React.forwardRef(
-  <C extends React.ElementType = 'div'>(
+  <C extends React.ElementType = "div">(
     { ...props }: PolymorphFlexProps<C>,
-    ref?: PolymorphicRef<C>,
-  ) => <StyledFlex ref={ref} {...props} />,
-)
-export default Flex
+    ref?: PolymorphicRef<C>
+  ) => <StyledFlex ref={ref} {...props} />
+);
+export default Flex;
