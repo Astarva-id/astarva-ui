@@ -1,17 +1,17 @@
+import { BoxSizing, CursorType } from "@interfaces/global";
+import OverrideColor from "@interfaces/OverrideColor.types";
 import type {
   BackgroundProps,
   BorderProps,
+  FlexboxProps,
   GridProps,
   LayoutProps,
+  OpacityProps,
   PositionProps,
   ShadowProps,
   SpaceProps,
   TypographyProps,
-  FlexboxProps,
-  OpacityProps,
 } from "styled-system";
-import OverrideColor from "@interfaces/OverrideColor.types";
-import { BoxSizing, CursorType } from "@interfaces/global";
 
 export interface BoxProps<C extends React.ElementType = React.ElementType>
   extends OverrideColor,
