@@ -1,6 +1,7 @@
 import { BoxProps } from "@components/Box/Box.types";
 import Box from "@components/Box/index";
 import Flex from "@components/Flex";
+import Text from "@components/Text";
 import { Meta } from "@storybook/react";
 import React from "react";
 
@@ -30,28 +31,31 @@ export const Colors: React.FC = () => {
 
   return (
     <Flex
-      width="800px"
       flexDirection="column"
-      gap="32px"
+      gap="64px"
       style={{
         fontFamily: "sans-serif",
       }}
     >
       {groupColors(Object.keys(colors)).map((arrColor, index) => {
         return (
-          <Flex key={index}>
+          <Flex gap="8px" key={index}>
             {arrColor.map((color, idx) => {
               return (
-                <Flex flexDirection="column" gap="4px" key={idx}>
-                  <div style={{ color: "black", fontSize: "12px" }}>
-                    {color}
-                  </div>
+                <Flex flexDirection="column" gap="8px" key={idx}>
                   <Box
                     backgroundColor={color}
-                    width="60px"
-                    height="60px"
+                    width="120px"
+                    height="40px"
                     padding="16px"
+                    borderRadius="12px"
                   />
+                  <Flex flexDirection="column" justifyContent="center">
+                    <Text variant="small">{color}</Text>
+                    <Text variant="small" color="black400">
+                      {colors[color]}
+                    </Text>
+                  </Flex>
                 </Flex>
               );
             })}

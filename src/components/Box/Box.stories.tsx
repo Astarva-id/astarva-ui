@@ -21,7 +21,7 @@ export const AllBox: React.FC = () => (
     }}
   >
     <Box
-      backgroundColor="red25"
+      backgroundColor="red200"
       width="max-content"
       padding="16px"
       borderRadius="4px"

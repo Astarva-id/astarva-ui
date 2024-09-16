@@ -14,6 +14,9 @@ importers:
       react-dom:
         specifier: '>=16.8.0'
         version: 18.3.1(react@18.3.1)
+      react-icomoon:
+        specifier: ^2.5.7
+        version: 2.5.7(react@18.3.1)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.3.0
@@ -3412,6 +3415,11 @@ packages:
     peerDependencies:
       react: ^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1 || ^18.0.0
       react-dom: ^0.14.8 || ^15.0.1 || ^16.0.0 || ^17.0.1 || ^18.0.0
+
+  react-icomoon@2.5.7:
+    resolution: {integrity: sha512-o6jsNviL7d2/fk83JXycvMSX76KSQ5GuC+q8xi+3anL4KY8EZH4D1BfXdqL8SF+ppOigrq4epUhfnWX8U/gM7g==}
+    peerDependencies:
+      react: ^16.4.1 || ^17.0.0 || ^18.0.0
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -7914,6 +7922,10 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-is: 18.1.0
+
+  react-icomoon@2.5.7(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-is@16.13.1: {}
 
