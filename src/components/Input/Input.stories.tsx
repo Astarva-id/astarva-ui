@@ -15,8 +15,8 @@ export default meta;
 export const AllInputText: React.FC = () => (
   <Flex flexDirection="column">
     <Flex flexDirection="column" gap="8px">
-      <InputText label="Email" />
       <InputText />
+      <InputText label="Email" />
       <InputText disabled />
       <InputText hint="HINT" />
       <InputText isError error="Field is required" hint="HINT" />
