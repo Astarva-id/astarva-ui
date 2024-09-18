@@ -4,7 +4,8 @@ export type IconNames =
   | "Checkmark-circle"
   | "Hide-outline"
   | "Info-circle"
-  | "Show-outline";
+  | "Eye-outline"
+  | "Magnifier-outline";
 
 export type IconProps = Omit<IcomoonProps, "icon"> & {
   icon: IconNames;

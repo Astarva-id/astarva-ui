@@ -14,7 +14,7 @@ const buttonVariant = ({
         border: `1px solid ${colors[backgroundColor]}`,
         backgroundColor: colors[backgroundColor],
         color: colors.white,
-        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        boxShadow: "0px 4px 8px 0px rgba(50, 132, 255, 0.25)",
         "&:hover": {
           boxShadow: "none",
           border: `1px solid ${backgroundColorHover ? colors[backgroundColorHover] : colors.blue700}`,

@@ -1,3 +1,5 @@
+import { InputPassword } from "./InputPassword";
+
 export interface InputProps
   extends Omit<React.HTMLProps<HTMLInputElement>, "size" | "prefix"> {
   size?: "small" | "regular";
@@ -8,7 +10,27 @@ export interface InputProps
   hint?: string;
   label?: string;
   // showCount?: boolean;
-  // maxLength?: number;
+  maxLength?: number;
   value?: string;
-  // noBorder?: boolean;
+  noBorder?: boolean;
+  isPlain?: boolean;
+  isFocus?: boolean;
+}
+
+export interface InputPasswordProps
+  extends Omit<React.HTMLProps<HTMLInputElement>, "size" | "prefix"> {
+  size?: "small" | "regular";
+  isError?: boolean;
+  hint?: string;
+  noBorder?: boolean;
+  error?: string;
+  label?: string;
+  value?: string;
+}
+
+export interface AllInput
+  extends React.ForwardRefExoticComponent<
+    InputProps & React.RefAttributes<HTMLInputElement>
+  > {
+  Password: typeof InputPassword;
 }
