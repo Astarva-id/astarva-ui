@@ -30,6 +30,7 @@ const StyledText = styled(Box)<TextProps>`
       text-decoration: line-through;
     `}
   width : ${(props) => props.width || "auto"};
+  text-align: ${(props) => props.textAlign};
   margin: 0;
   ${space}
   ${overrideColorConfig}

@@ -78,5 +78,23 @@ export const AllText: React.FC = () => (
         magnam, nobis quibusdam quos.
       </Text>
     </Flex>
+
+    <Flex flexDirection="column" gap="8px" maxWidth="400px">
+      <Text variant="medium" weight="regular" textAlign="left">
+        Text Left
+      </Text>
+      <Text variant="medium" weight="regular" textAlign="center">
+        Text Center
+      </Text>
+      <Text variant="medium" weight="regular" textAlign="right">
+        Text Right
+      </Text>
+      <Text variant="medium" weight="regular" textAlign="justify">
+        Text Justify. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Modi, libero nesciunt quo eos atque pariatur magnam ex sint unde culpa
+        architecto explicabo sequi corporis sapiente provident deserunt,
+        repudiandae sed.
+      </Text>
+    </Flex>
   </Flex>
 );
