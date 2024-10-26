@@ -5,6 +5,7 @@ export type IconNames =
   | "Hide-outline"
   | "Info-circle"
   | "Eye-outline"
+  | "Left-outline"
   | "Magnifier-outline";
 
 export type IconProps = Omit<IcomoonProps, "icon"> & {

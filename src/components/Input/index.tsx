@@ -12,6 +12,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
       prefix,
       sufix,
       label,
+      _label,
       hint,
       isError,
       size = "regular",
@@ -64,7 +65,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <Flex flexDirection="column" gap="10px" onClick={onClickInput}>
         {label && (
-          <Text weight="medium" color="black900">
+          <Text weight="medium" color="black900" {..._label}>
             {label}
           </Text>
         )}

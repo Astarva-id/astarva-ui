@@ -1,3 +1,5 @@
+import { TextProps } from "@components/Text/Text.types";
+
 import { InputPassword } from "./InputPassword";
 
 export interface InputProps
@@ -9,6 +11,7 @@ export interface InputProps
   error?: string;
   hint?: string;
   label?: string;
+  _label?: TextProps;
   // showCount?: boolean;
   maxLength?: number;
   value?: string;
