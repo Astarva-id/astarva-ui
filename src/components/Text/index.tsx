@@ -18,6 +18,7 @@ const variantMapping: VariantMappingType = {
   medium: "p",
   small: "span",
   "extra-small": "small",
+  micro: "small",
 };
 
 const StyledText = styled(Box)<TextProps>`

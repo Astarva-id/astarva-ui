@@ -43,6 +43,10 @@ const textVariant = variant({
       fontSize: "12px",
       lineHeight: "20px",
     },
+    micro: {
+      fontSize: "10px",
+      lineHeight: "18px",
+    },
   },
 });
 

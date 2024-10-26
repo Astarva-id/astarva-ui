@@ -12,7 +12,8 @@ export type TextVariant =
   | "large"
   | "medium"
   | "small"
-  | "extra-small";
+  | "extra-small"
+  | "micro";
 
 export type TextElement =
   | "h1"
@@ -42,7 +43,7 @@ export interface TextProps extends BoxProps {
   strikeThrough?: boolean;
   color?: colorIndex;
   as?: TextElement;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   width?: string;
   lineClamp?: number;
   id?: string;
