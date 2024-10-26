@@ -13,6 +13,7 @@ export * from "@components/Button/Button.types";
 export * from "@components/Colors/Colors.types";
 export * from "@components/Flex/Flex.types";
 export * from "@components/Input/Input.types";
+export * from "@components/Progress/Progress.types";
 export * from "@components/Text/Text.types";
 
 // Export Utils
