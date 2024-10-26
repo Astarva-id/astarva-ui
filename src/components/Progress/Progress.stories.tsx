@@ -3,7 +3,7 @@ import Text from "@components/Text";
 import { Meta } from "@storybook/react";
 import React from "react";
 
-import { Progress } from ".";
+import Progress from ".";
 
 export default {
   title: "Components/Progress",

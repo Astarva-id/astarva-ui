@@ -4,6 +4,7 @@ export { default as Button } from "@components/Button";
 export { default as Colors } from "@components/Colors";
 export { default as Flex } from "@components/Flex";
 export { default as Input } from "@components/Input";
+export { default as Progress } from "@components/Progress";
 export { default as Text } from "@components/Text";
 
 // Export Component Interfaces
