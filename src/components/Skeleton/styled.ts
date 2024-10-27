@@ -1,7 +1,7 @@
 import Box from "@components/Box";
 import styled, { css } from "styled-components";
 
-import { SkeletonProps } from "./types";
+import { SkeletonProps } from "./Skeleton.types";
 
 const animations = () => {
   return css`
