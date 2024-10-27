@@ -1,6 +1,6 @@
 {
   "name": "astarva-ui",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "main": "dist/astarva-ui.umd.js",
   "module": "dist/astarva-ui.es.js",
   "types": "dist/types/index.d.ts",
@@ -11,6 +11,7 @@
     "dev": "vite",
     "build": "vite build",
     "storybook": "storybook dev -p 6006",
+    "deploy": "vite build && npm publish",
     "build-storybook": "storybook build",
     "preview": "vite preview",
     "generate-types": "tsc --emitDeclarationOnly",
