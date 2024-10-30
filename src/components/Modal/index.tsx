@@ -4,7 +4,7 @@ import Icon from "@components/Icon";
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-import { ModalProps } from "./types";
+import { ModalProps } from "./Modal.types";
 
 const Modal: React.FC<ModalProps> = ({
   isVisible,
