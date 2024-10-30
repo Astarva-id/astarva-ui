@@ -28,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({
   return createPortal(
     <Flex
       zIndex={1000}
-      width="100vh"
+      width="100vw"
       height="100vh"
       position="fixed"
       backgroundColor="overlay75"
