@@ -57,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({
                 icon="Close-solid"
                 aria-label="modal-close-button"
                 cursor="pointer"
-                color="black60"
+                color="black600"
                 onClick={onClose}
               />
             </Box>

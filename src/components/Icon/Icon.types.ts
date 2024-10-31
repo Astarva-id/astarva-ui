@@ -1,3 +1,4 @@
+import { colorIndex } from "@components/Colors/Colors.types";
 import { IconProps as IcomoonProps } from "react-icomoon";
 
 export type IconNames =
@@ -26,6 +27,7 @@ export type IconNames =
   | "Play-solid"
   | "Plus-solid";
 
-export type IconProps = Omit<IcomoonProps, "icon"> & {
+export type IconProps = Omit<IcomoonProps, "icon" | "color"> & {
   icon: IconNames;
+  color?: colorIndex;
 };

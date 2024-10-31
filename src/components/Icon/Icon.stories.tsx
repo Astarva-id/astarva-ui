@@ -22,7 +22,7 @@ export const AllIcon: React.FC = () => {
     iconSet.icons
       .map((icon) => icon.properties.name)
       .forEach((icon) => {
-        if (icon.includes("circle")) {
+        if (icon.includes("solid")) {
           groups.circle.push(icon);
         } else if (icon.includes("outline")) {
           groups.outline.push(icon);
