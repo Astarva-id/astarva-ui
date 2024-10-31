@@ -43,7 +43,7 @@ export const AllIcon: React.FC = () => {
       {/* Circle */}
       <Flex flexDirection="column" gap="24px">
         <Text>Circle Icon</Text>
-        <Flex gap="24px">
+        <Flex gap="24px" maxWidth="80%" flexWrap="wrap">
           {groupIcons().circle.map((icon, index) => {
             return (
               <Flex
@@ -64,7 +64,7 @@ export const AllIcon: React.FC = () => {
       </Flex>
       <Flex flexDirection="column" gap="24px">
         <Text>Outline Icon</Text>
-        <Flex gap="24px">
+        <Flex gap="24px" maxWidth="80%" flexWrap="wrap">
           {groupIcons().outline.map((icon, index) => {
             return (
               <Flex
