@@ -2,6 +2,7 @@
 export { default as Box } from "@components/Box";
 export { default as Button } from "@components/Button";
 export { default as Colors } from "@components/Colors";
+export { default as Divider } from "@components/Divider";
 export { default as Flex } from "@components/Flex";
 export { default as Icon } from "@components/Icon";
 export { default as Input } from "@components/Input";
@@ -14,6 +15,7 @@ export { default as Text } from "@components/Text";
 export * from "@components/Box/Box.types";
 export * from "@components/Button/Button.types";
 export * from "@components/Colors/Colors.types";
+export * from "@components/Divider/Divider.types";
 export * from "@components/Flex/Flex.types";
 export * from "@components/Icon/Icon.types";
 export * from "@components/Input/Input.types";
