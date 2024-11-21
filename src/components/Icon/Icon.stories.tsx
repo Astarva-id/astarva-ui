@@ -55,7 +55,7 @@ export const AllIcon: React.FC = () => {
                 textAlign="center"
                 key={index}
               >
-                <Icon icon={icon} />
+                <Icon name={icon} />
                 <Text variant="extra-small">{icon}</Text>
               </Flex>
             );
@@ -76,7 +76,7 @@ export const AllIcon: React.FC = () => {
                 textAlign="center"
                 key={index}
               >
-                <Icon icon={icon} />
+                <Icon name={icon} />
                 <Text variant="extra-small">{icon}</Text>
               </Flex>
             );

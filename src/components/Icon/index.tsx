@@ -9,11 +9,13 @@ import iconSet from "./selection.json";
 const Icon: React.FC<IconProps> = ({
   size = "24px",
   color = "black500",
+  name,
   ...props
 }) => (
   <IcoMoon
     iconSet={iconSet}
     size={size}
+    icon={name}
     color={colors[color as colorIndex]}
     {...props}
   />

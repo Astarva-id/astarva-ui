@@ -81,7 +81,7 @@ export const InputPassword = React.forwardRef<
             {...restProps}
           />
           <Icon
-            icon={isShow ? "Eye-outline" : "Hide-outline"}
+            name={isShow ? "Eye-outline" : "Hide-outline"}
             cursor="pointer"
             size={size === "regular" ? 20 : 16}
             onClick={() => setIsShow((prev) => !prev)}

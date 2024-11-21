@@ -9,11 +9,12 @@ export type IconNames =
   | "Alert-Triangle-outline"
   | "Alert-Triangle-solid"
   | "Arrow-Left-solid"
-  | "Checkmark-outline"
   | "Check-solid"
+  | "Checkmark-outline"
   | "Clock-outline"
   | "Clock-solid"
   | "Close-solid"
+  | "Down-outline"
   | "Eye-outline"
   | "Filter-outline"
   | "Filter-solid"
@@ -33,9 +34,10 @@ export type IconNames =
   | "Play-solid"
   | "Plus-solid"
   | "Trash-outline"
+  | "Up-outline"
   | "Trash-solid";
 
 export type IconProps = Omit<IcomoonProps, "icon" | "color"> & {
-  icon: IconNames & IconNames;
+  name: IconNames & IconNames;
   color?: colorIndex;
 };

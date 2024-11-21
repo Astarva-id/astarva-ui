@@ -33,17 +33,17 @@ export const InputText: React.FC = () => (
         <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
           <Input
             label="Email"
-            prefix={<Icon icon="Magnifier-outline" size={20} color="blue100" />}
+            prefix={<Icon name="Magnifier-outline" size={20} color="blue100" />}
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             disabled
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             noBorder
             disabled
@@ -51,13 +51,13 @@ export const InputText: React.FC = () => (
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             hint="HINT. max character 28 char"
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             isError
             error="Field is required"
@@ -70,24 +70,24 @@ export const InputText: React.FC = () => (
         <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
           <Input
             label="Email"
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             disabled
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             noBorder
             disabled
             placeholder="Input without border"
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             hint="HINT. max character 28 char"
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             isError
             error="Field is required"
           />
@@ -98,29 +98,39 @@ export const InputText: React.FC = () => (
         <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
           <Input
             label="Email"
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             disabled
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             noBorder
             disabled
             placeholder="Input without border"
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             hint="HINT. max character 28 char"
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             isError
             error="Field is required"
           />
@@ -145,21 +155,21 @@ export const InputText: React.FC = () => (
         <Flex flexDirection="column" gap="8px" minWidth="300px">
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             size="small"
             label="Password"
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             size="small"
             disabled
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             size="small"
             disabled
@@ -167,14 +177,14 @@ export const InputText: React.FC = () => (
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             size="small"
             hint="HINT"
           />
           <Input
             prefix={
-              <Icon icon="Magnifier-outline" size={20} color="black200" />
+              <Icon name="Magnifier-outline" size={20} color="black200" />
             }
             size="small"
             isError
@@ -188,28 +198,28 @@ export const InputText: React.FC = () => (
         <Text>Input Text - Small</Text>
         <Flex flexDirection="column" gap="8px" minWidth="300px">
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             label="Password"
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             disabled
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             disabled
             noBorder
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             hint="HINT"
           />
           <Input
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             isError
             error="Field is required"
@@ -222,33 +232,43 @@ export const InputText: React.FC = () => (
         <Text>Input Text - Small</Text>
         <Flex flexDirection="column" gap="8px" minWidth="300px">
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             label="Password"
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             disabled
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             disabled
             noBorder
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             hint="HINT"
           />
           <Input
-            prefix={<Icon icon="Info-circle" size={20} color="black200" />}
-            sufix={<Icon icon="Eye-outline" size={20} color="black200" />}
+            prefix={
+              <Icon name="Info-Circle-outline" size={20} color="black200" />
+            }
+            sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             isError
             error="Field is required"

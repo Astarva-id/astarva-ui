@@ -54,7 +54,7 @@ const Modal: React.FC<ModalProps> = ({
           {closable && (
             <Box position="absolute" top="0" right="0">
               <Icon
-                icon="Close-solid"
+                name="Close-solid"
                 aria-label="modal-close-button"
                 cursor="pointer"
                 color="black600"
