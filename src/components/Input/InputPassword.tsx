@@ -40,12 +40,12 @@ export const InputPassword = React.forwardRef<
 
     const handleFocus = (event: React.FocusEvent<HTMLInputElement>) => {
       setIsFocus(true);
-      onFocus(event);
+      onFocus?.(event);
     };
 
     const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
-      setIsFocus(false);
-      onBlur(event);
+      setIsFocus?.(false);
+      onBlur?.(event);
     };
     return (
       <Flex flexDirection="column" gap="10px" onClick={onClickInput}>
