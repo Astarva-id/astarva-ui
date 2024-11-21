@@ -1,6 +1,7 @@
+import { FlexProps } from "@components/Flex/Flex.types";
 import { ReactNode } from "react";
 
-export interface ModalProps {
+export interface ModalProps extends FlexProps {
   isVisible: boolean;
   closable?: boolean;
   verticalCentered?: boolean;

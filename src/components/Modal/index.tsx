@@ -1,10 +1,8 @@
-import Box from "@components/Box";
-import Flex from "@components/Flex";
-import Icon from "@components/Icon";
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 
 import { ModalProps } from "./Modal.types";
+import { ModalContent, Overlay } from "./styled";
 
 const Modal: React.FC<ModalProps> = ({
   isVisible,
@@ -12,9 +10,10 @@ const Modal: React.FC<ModalProps> = ({
   children,
   closable,
   padding,
-  width = "fit-content",
+  width = "100%",
   height = "fit-content",
   onClose,
+  ...props
 }) => {
   useEffect(() => {
     if (isVisible) {
@@ -26,46 +25,26 @@ const Modal: React.FC<ModalProps> = ({
   if (!isVisible) return null;
 
   return createPortal(
-    <Flex
-      zIndex={1000}
-      width="100vw"
-      height="100vh"
-      position="fixed"
-      backgroundColor="overlay75"
-      justifyContent="center"
-      alignItems={verticalCentered ? "center" : "flex-start"}
+    <Overlay
+      isVisible={isVisible}
+      verticalCentered={verticalCentered}
       onClick={closable && onClose}
-      top={0}
-      left={0}
-      paddingTop={!verticalCentered && "16px"}
     >
-      <Flex
-        backgroundColor="white"
-        borderRadius="1rem"
-        padding={padding || "2.5rem"}
-        justifyContent="flex-start"
-        alignContent="flex-start"
+      <ModalContent
+        isVisible={isVisible}
+        verticalCentered={verticalCentered}
         aria-label="dialog-content"
+        padding={padding || "2.5rem"}
+        width={width}
+        height={height}
         onClick={(event: React.MouseEvent<HTMLElement>) =>
           event.stopPropagation()
         }
+        {...props}
       >
-        <Flex position="relative" width={width} height={height}>
-          {closable && (
-            <Box position="absolute" top="0" right="0">
-              <Icon
-                name="Close-solid"
-                aria-label="modal-close-button"
-                cursor="pointer"
-                color="black600"
-                onClick={onClose}
-              />
-            </Box>
-          )}
-          {children}
-        </Flex>
-      </Flex>
-    </Flex>,
+        {children}
+      </ModalContent>
+    </Overlay>,
     document.body
   );
 };
