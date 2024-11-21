@@ -42,24 +42,24 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
     const handleOnChange = (event: React.FormEvent<HTMLInputElement>) => {
       if (maxLength) {
         if (event.currentTarget.value.length <= maxLength) {
-          return onChange(event);
+          return onChange?.(event);
         }
         const value = event.currentTarget.value;
         event.currentTarget.value = value.substring(0, maxLength);
-        return onChange(event);
+        return onChange?.(event);
       } else {
-        return onChange(event);
+        return onChange?.(event);
       }
     };
 
     const handleFocus = (event: React.FocusEvent<HTMLInputElement>) => {
       setIsFocus(true);
-      onFocus(event);
+      onFocus?.(event);
     };
 
     const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
       setIsFocus(false);
-      onBlur(event);
+      onBlur?.(event);
     };
 
     return (
