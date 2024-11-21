@@ -11,19 +11,19 @@ const buttonVariant = ({
     prop: "variant",
     variants: {
       primary: {
-        border: `1px solid ${colors[backgroundColor]}`,
+        border: `.0625rem solid ${colors[backgroundColor]}`,
         backgroundColor: colors[backgroundColor],
         color: colors.white,
-        boxShadow: "0px 4px 8px 0px rgba(50, 132, 255, 0.25)",
+        boxShadow: "0rem .25rem .5rem 0rem rgba(50, 132, 255, 0.25)",
         "&:hover": {
           boxShadow: "none",
-          border: `1px solid ${backgroundColorHover ? colors[backgroundColorHover] : colors.blue700}`,
+          border: `.0625rem solid ${backgroundColorHover ? colors[backgroundColorHover] : colors.blue700}`,
           backgroundColor: backgroundColorHover
             ? colors[backgroundColorHover]
             : colors.blue700,
         },
         "&:disabled": {
-          border: `1px solid ${colors.black100}`,
+          border: `.0625rem solid ${colors.black100}`,
           boxShadow: "none",
           backgroundColor: colors.black100,
           cursor: "not-allowed",
@@ -38,7 +38,7 @@ const buttonVariant = ({
       secondary: {
         backgroundColor: colors.white,
         color: colors[backgroundColor],
-        border: `1px solid ${colors[backgroundColor]}`,
+        border: `.0625rem solid ${colors[backgroundColor]}`,
         svg: {
           path: {
             fill: colors[backgroundColor],
@@ -56,7 +56,7 @@ const buttonVariant = ({
           },
         },
         "&:disabled": {
-          border: `1px solid ${colors.black100}`,
+          border: `.0625rem solid ${colors.black100}`,
           backgroundColor: colors.black100,
           cursor: "not-allowed",
           color: colors.black500,
@@ -69,9 +69,9 @@ const buttonVariant = ({
       },
       tertiary: {
         backgroundColor: colors.white,
-        border: `1px solid ${colors.white}`,
+        border: `.0625rem solid ${colors.white}`,
         color: colors[backgroundColor],
-        boxShadow: "0 1px 4px 0 rgba(166, 175, 195, 0.25)",
+        boxShadow: "0 .0625rem .25rem 0 rgba(166, 175, 195, 0.25)",
         svg: {
           path: {
             fill: colors[backgroundColor],
@@ -89,7 +89,7 @@ const buttonVariant = ({
         },
         "&:disabled": {
           boxShadow: "none",
-          border: `1px solid ${colors.black100}`,
+          border: `.0625rem solid ${colors.black100}`,
           backgroundColor: colors.black100,
           cursor: "not-allowed",
           color: colors.black500,
@@ -101,7 +101,7 @@ const buttonVariant = ({
         },
         "&:active": {
           backgroundColor: colors.white,
-          border: `solid 1px ${colors.black50}`,
+          border: `solid .0625rem ${colors.black50}`,
           color: colors.black100,
           svg: {
             path: {
@@ -118,10 +118,10 @@ const buttonShape = variant({
   variants: {
     square: {},
     "semi-round": {
-      borderRadius: "10px",
+      borderRadius: ".625rem",
     },
     rounded: {
-      borderRadius: "99999px",
+      borderRadius: "6249.9375rem",
     },
   },
 });
@@ -132,21 +132,21 @@ const buttonSize = () =>
     variants: {
       large: {
         fontWeight: "700",
-        padding: "12px 32px",
-        fontSize: "14px",
-        lineHeight: "24px",
+        padding: ".75rem 2rem",
+        fontSize: ".875rem",
+        lineHeight: "1.5rem",
       },
       medium: {
         fontWeight: "700",
-        padding: "8px 24px",
-        fontSize: "14px",
-        lineHeight: "24px",
+        padding: ".5rem 1.5rem",
+        fontSize: ".875rem",
+        lineHeight: "1.5rem",
       },
       small: {
         fontWeight: "700",
-        padding: "6px 18px",
-        fontSize: "12px",
-        lineHeight: "20px",
+        padding: ".375rem 1.125rem",
+        fontSize: ".75rem",
+        lineHeight: "1.25rem",
       },
     },
   });

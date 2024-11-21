@@ -15,12 +15,12 @@ export default meta;
 export const AllText: React.FC = () => (
   <Flex
     flexDirection="column"
-    gap="48px"
+    gap="3rem"
     style={{
       fontFamily: "sans-serif",
     }}
   >
-    <Flex flexDirection="column" gap="8px">
+    <Flex flexDirection="column" gap=".5rem">
       <Text variant="heading1">Variant Heading 1</Text>
       <Text variant="heading2">Variant Heading 2</Text>
       <Text variant="heading3">Variant Heading 3</Text>
@@ -33,7 +33,7 @@ export const AllText: React.FC = () => (
       <Text variant="extra-small">Variant Extra Small</Text>
     </Flex>
 
-    <Flex flexDirection="column" gap="8px">
+    <Flex flexDirection="column" gap=".5rem">
       <Text variant="medium" weight="thin">
         Variant Medium & Weight Thin
       </Text>
@@ -60,7 +60,7 @@ export const AllText: React.FC = () => (
       </Text>
     </Flex>
 
-    <Flex flexDirection="column" gap="8px" maxWidth="400px">
+    <Flex flexDirection="column" gap=".5rem" maxWidth="25rem">
       <Text variant="medium" weight="regular" strikeThrough>
         Text Strike Through
       </Text>
@@ -79,7 +79,7 @@ export const AllText: React.FC = () => (
       </Text>
     </Flex>
 
-    <Flex flexDirection="column" gap="8px" maxWidth="400px">
+    <Flex flexDirection="column" gap=".5rem" maxWidth="25rem">
       <Text variant="medium" weight="regular" textAlign="left">
         Text Left
       </Text>

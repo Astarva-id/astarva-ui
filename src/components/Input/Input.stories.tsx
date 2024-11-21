@@ -15,11 +15,16 @@ const meta: Meta<InputProps> = {
 export default meta;
 
 export const InputText: React.FC = () => (
-  <Flex flexDirection="column" gap="48px">
-    <Flex gap="64px">
-      <Flex flexDirection="column" gap="24px">
+  <Flex flexDirection="column" gap="3rem">
+    <Flex gap="4rem">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Regular</Text>
-        <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
+        <Flex
+          width="100%"
+          flexDirection="column"
+          gap=".5rem"
+          minWidth="18.75rem"
+        >
           <Input label="Email" />
           <Input disabled />
           <Input noBorder disabled placeholder="Input without border" />
@@ -28,9 +33,14 @@ export const InputText: React.FC = () => (
         </Flex>
       </Flex>
 
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Regular</Text>
-        <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
+        <Flex
+          width="100%"
+          flexDirection="column"
+          gap=".5rem"
+          minWidth="18.75rem"
+        >
           <Input
             label="Email"
             prefix={<Icon name="Magnifier-outline" size={20} color="blue100" />}
@@ -65,9 +75,14 @@ export const InputText: React.FC = () => (
         </Flex>
       </Flex>
 
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Regular</Text>
-        <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
+        <Flex
+          width="100%"
+          flexDirection="column"
+          gap=".5rem"
+          minWidth="18.75rem"
+        >
           <Input
             label="Email"
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
@@ -93,9 +108,14 @@ export const InputText: React.FC = () => (
           />
         </Flex>
       </Flex>
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Regular</Text>
-        <Flex width="100%" flexDirection="column" gap="8px" minWidth="300px">
+        <Flex
+          width="100%"
+          flexDirection="column"
+          gap=".5rem"
+          minWidth="18.75rem"
+        >
           <Input
             label="Email"
             prefix={
@@ -138,10 +158,10 @@ export const InputText: React.FC = () => (
       </Flex>
     </Flex>
 
-    <Flex gap="64px">
-      <Flex flexDirection="column" gap="24px">
+    <Flex gap="4rem">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Small</Text>
-        <Flex flexDirection="column" gap="8px" minWidth="300px">
+        <Flex flexDirection="column" gap=".5rem" minWidth="18.75rem">
           <Input size="small" label="Password" />
           <Input size="small" disabled />
           <Input size="small" disabled noBorder />
@@ -150,9 +170,9 @@ export const InputText: React.FC = () => (
         </Flex>
       </Flex>
 
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Small</Text>
-        <Flex flexDirection="column" gap="8px" minWidth="300px">
+        <Flex flexDirection="column" gap=".5rem" minWidth="18.75rem">
           <Input
             prefix={
               <Icon name="Magnifier-outline" size={20} color="black200" />
@@ -194,9 +214,9 @@ export const InputText: React.FC = () => (
         </Flex>
       </Flex>
 
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Small</Text>
-        <Flex flexDirection="column" gap="8px" minWidth="300px">
+        <Flex flexDirection="column" gap=".5rem" minWidth="18.75rem">
           <Input
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
@@ -228,9 +248,9 @@ export const InputText: React.FC = () => (
         </Flex>
       </Flex>
 
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Input Text - Small</Text>
-        <Flex flexDirection="column" gap="8px" minWidth="300px">
+        <Flex flexDirection="column" gap=".5rem" minWidth="18.75rem">
           <Input
             prefix={
               <Icon name="Info-Circle-outline" size={20} color="black200" />

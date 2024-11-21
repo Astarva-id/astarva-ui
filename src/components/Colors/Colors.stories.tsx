@@ -32,23 +32,23 @@ export const Colors: React.FC = () => {
   return (
     <Flex
       flexDirection="column"
-      gap="64px"
+      gap="4rem"
       style={{
         fontFamily: "sans-serif",
       }}
     >
       {groupColors(Object.keys(colors)).map((arrColor, index) => {
         return (
-          <Flex gap="8px" key={index}>
+          <Flex gap=".5rem" key={index}>
             {arrColor.map((color, idx) => {
               return (
-                <Flex flexDirection="column" gap="8px" key={idx}>
+                <Flex flexDirection="column" gap=".5rem" key={idx}>
                   <Box
                     backgroundColor={color}
-                    width="120px"
-                    height="40px"
-                    padding="16px"
-                    borderRadius="12px"
+                    width="7.5rem"
+                    height="2.5rem"
+                    padding="1rem"
+                    borderRadius=".75rem"
                   />
                   <Flex flexDirection="column" justifyContent="center">
                     <Text variant="small">{color}</Text>

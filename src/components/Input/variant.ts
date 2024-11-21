@@ -10,16 +10,16 @@ export const inputVariant = (props: InputProps) => {
       regular: {
         boxSizing: "border-box",
         width: "100%",
-        lineHeight: "22px",
+        lineHeight: "1.375rem",
         color: colors.black800,
         border: props.noBorder
           ? "none"
           : props.isError
-            ? `1px solid ${colors.red400}`
-            : `1px solid ${colors.black100}`,
-        fontSize: "14px",
-        padding: "12px 16px",
-        borderRadius: "8px",
+            ? `.0625rem solid ${colors.red400}`
+            : `.0625rem solid ${colors.black100}`,
+        fontSize: ".875rem",
+        padding: ".75rem 1rem",
+        borderRadius: ".5rem",
         backgroundColor: colors.white,
         "&:focus,&:hover": {
           borderColor: props.isError ? colors.red400 : colors.blue400,
@@ -32,20 +32,20 @@ export const inputVariant = (props: InputProps) => {
         },
         "&::placeholder": {
           color: colors.black300,
-          fontSize: "14px",
+          fontSize: ".875rem",
         },
       },
       small: {
         boxSizing: "border-box",
         width: "100%",
-        lineHeight: "22px",
+        lineHeight: "1.375rem",
         color: colors.black800,
         border: props.isError
-          ? `1px solid ${colors.red400}`
-          : `1px solid ${colors.black100}`,
-        fontSize: "12px",
-        padding: "8px 10px",
-        borderRadius: "6px",
+          ? `.0625rem solid ${colors.red400}`
+          : `.0625rem solid ${colors.black100}`,
+        fontSize: ".75rem",
+        padding: ".5rem .625rem",
+        borderRadius: ".375rem",
         backgroundColor: colors.white,
         "&:focus,&:hover": {
           borderColor: props.isError ? colors.red400 : colors.blue400,
@@ -58,7 +58,7 @@ export const inputVariant = (props: InputProps) => {
         },
         "&::placeholder": {
           color: colors.black300,
-          fontSize: "12px",
+          fontSize: ".75rem",
         },
       },
     },
@@ -71,18 +71,18 @@ export const inputWrapperVariant = (props: InputProps) => {
     variants: {
       regular: {
         boxSizing: "border-box",
-        padding: "12px 16px",
-        columnGap: "8px",
+        padding: ".75rem 1rem",
+        columnGap: ".5rem",
         width: "100%",
         alignItems: "center",
-        borderRadius: "8px",
+        borderRadius: ".5rem",
         border: props.noBorder
           ? "none"
           : props.isError
-            ? `1px solid ${colors.red400}`
+            ? `.0625rem solid ${colors.red400}`
             : props.isFocus
-              ? `1px solid ${colors.blue400}`
-              : `1px solid ${colors.black100}`,
+              ? `.0625rem solid ${colors.blue400}`
+              : `.0625rem solid ${colors.black100}`,
         color: colors.black700,
         "&:hover": {
           borderColor: props.noBorder
@@ -101,7 +101,7 @@ export const inputWrapperVariant = (props: InputProps) => {
         },
         "&::placeholder": {
           color: colors.black200,
-          fontSize: "14px",
+          fontSize: ".875rem",
         },
         svg: {
           flexShrink: 0,
@@ -116,18 +116,18 @@ export const inputWrapperVariant = (props: InputProps) => {
       },
       small: {
         boxSizing: "border-box",
-        padding: "8px 12px",
+        padding: ".5rem .75rem",
         width: "100%",
-        columnGap: "8px",
+        columnGap: ".5rem",
         alignItems: "center",
-        borderRadius: "6px",
+        borderRadius: ".375rem",
         border: props.noBorder
           ? "none"
           : props.isError
-            ? `1px solid ${colors.red400}`
+            ? `.0625rem solid ${colors.red400}`
             : props.isFocus
-              ? `1px solid ${colors.blue400}`
-              : `1px solid ${colors.black100}`,
+              ? `.0625rem solid ${colors.blue400}`
+              : `.0625rem solid ${colors.black100}`,
         color: colors.black700,
         "&:hover": {
           borderColor: props.noBorder
@@ -146,7 +146,7 @@ export const inputWrapperVariant = (props: InputProps) => {
         },
         "&::placeholder": {
           color: colors.black200,
-          fontSize: "14px",
+          fontSize: ".875rem",
         },
         svg: {
           flexShrink: 0,

@@ -15,7 +15,7 @@ export default meta;
 export const AllBox: React.FC = () => (
   <Flex
     flexDirection="column"
-    gap="16px"
+    gap="1rem"
     style={{
       fontFamily: "sans-serif",
     }}
@@ -23,8 +23,8 @@ export const AllBox: React.FC = () => (
     <Box
       backgroundColor="red200"
       width="max-content"
-      padding="16px"
-      borderRadius="4px"
+      padding="1rem"
+      borderRadius=".25rem"
     >
       <div style={{ color: "white" }}>Box Component</div>
     </Box>

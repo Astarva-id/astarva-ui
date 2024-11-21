@@ -4,48 +4,48 @@ const textVariant = variant({
   prop: "variant",
   variants: {
     heading1: {
-      fontSize: "60px",
-      lineHeight: "72px",
+      fontSize: "3.75rem",
+      lineHeight: "4.5rem",
     },
     heading2: {
-      fontSize: "48px",
-      lineHeight: "58px",
+      fontSize: "3rem",
+      lineHeight: "3.625rem",
     },
     heading3: {
-      fontSize: "40px",
-      lineHeight: "58px",
+      fontSize: "2.5rem",
+      lineHeight: "3.625rem",
     },
     heading4: {
-      fontSize: "30px",
-      lineHeight: "38px",
+      fontSize: "1.875rem",
+      lineHeight: "2.375rem",
     },
     heading5: {
-      fontSize: "28px",
-      lineHeight: "38px",
+      fontSize: "1.75rem",
+      lineHeight: "2.375rem",
     },
     heading6: {
-      fontSize: "24px",
-      lineHeight: "30px",
+      fontSize: "1.5rem",
+      lineHeight: "1.875rem",
     },
     large: {
-      fontSize: "18px",
-      lineHeight: "26px",
+      fontSize: "1.125rem",
+      lineHeight: "1.625rem",
     },
     medium: {
-      fontSize: "16px",
-      lineHeight: "24px",
+      fontSize: "1rem",
+      lineHeight: "1.5rem",
     },
     small: {
-      fontSize: "14px",
-      lineHeight: "22px",
+      fontSize: ".875rem",
+      lineHeight: "1.375rem",
     },
     "extra-small": {
-      fontSize: "12px",
-      lineHeight: "20px",
+      fontSize: ".75rem",
+      lineHeight: "1.25rem",
     },
     micro: {
-      fontSize: "10px",
-      lineHeight: "18px",
+      fontSize: ".625rem",
+      lineHeight: "1.125rem",
     },
   },
 });

@@ -22,7 +22,7 @@ const fadeOut = keyframes`
 
 const slideIn = keyframes`
   from {
-    transform: translateY(-50px);
+    transform: translateY(-3.125rem);
     opacity: 0;
     }
     to {
@@ -37,7 +37,7 @@ const slideOut = keyframes`
     opacity: 1;
   }
   to {
-    transform: translateY(-50px);
+    transform: translateY(-3.125rem);
     opacity: 0;
   }
 `;
@@ -97,6 +97,6 @@ export const ModalContent = styled(Flex)`
           animation: ${() => (props.isVisible ? slideIn : slideOut)} 0.3s
             ease-out;
           transform: ${() =>
-            props.isVisible ? "translateY(0)" : "translateY(-50px)"};
+            props.isVisible ? "translateY(0)" : "translateY(-3.125rem)"};
         `}
 `;

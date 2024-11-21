@@ -15,12 +15,12 @@ export const PlainInput: React.FC<InputProps> = styled.input<InputProps>`
           border: none;
           flex-grow: 1;
           flex: 1;
-          line-height: 20px;
+          line-height: 1.25rem;
           width: 100%;
           outline: none;
           &::placeholder {
             color: ${colors.black200};
-            font-size: 14px;
+            font-size: 0.875rem;
           }
           &:disabled {
             background-color: ${colors.black50};

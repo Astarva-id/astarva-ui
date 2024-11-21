@@ -63,13 +63,16 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
     };
 
     return (
-      <Flex flexDirection="column" gap="10px" onClick={onClickInput}>
+      <Flex flexDirection="column" gap=".625rem" onClick={onClickInput}>
         {label && (
           <Text weight="medium" color="black900" {..._label}>
             {label}
           </Text>
         )}
-        <Flex flexDirection="column" gap={size === "regular" ? "6px" : "4px"}>
+        <Flex
+          flexDirection="column"
+          gap={size === "regular" ? ".375rem" : ".25rem"}
+        >
           {prefix || sufix ? (
             <InputWrapper
               aria-label="input-wrapper"

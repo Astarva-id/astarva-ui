@@ -7,7 +7,7 @@ import { IconProps } from "./Icon.types";
 import iconSet from "./selection.json";
 
 const Icon: React.FC<IconProps> = ({
-  size = "24px",
+  size = "1.5rem",
   color = "black500",
   name,
   ...props

@@ -11,7 +11,7 @@ export const ProgressCircle: React.FC<ProgressCircleProps> = ({
   color = "blue400",
   total = 5,
   value = 0,
-  size = "120px",
+  size = "7.5rem",
   _text,
   children,
   ...props

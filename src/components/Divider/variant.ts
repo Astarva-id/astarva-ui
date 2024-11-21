@@ -8,13 +8,13 @@ const dividerVariant = () =>
       horizontal: {
         position: "relative",
         display: "block",
-        height: `1px`,
+        height: `.0625rem`,
         width: "100%",
       },
 
       vertical: {
         height: "auto",
-        width: "1px",
+        width: ".0625rem",
       },
     },
   });
@@ -30,14 +30,14 @@ const dividerAlign = () =>
         alignItems: "center",
         "&:before": {
           content: "",
-          height: "1px",
+          height: ".0625rem",
           background: colors.black100,
           flex: 1,
           margin: "0 .25em 0 0",
         },
         "&:after": {
           content: "",
-          height: "1px",
+          height: ".0625rem",
           background: colors.black100,
           flex: 12,
           margin: "0 0 0 .25em",
@@ -50,14 +50,14 @@ const dividerAlign = () =>
         alignItems: "center",
         "&:before": {
           content: "",
-          height: "1px",
+          height: ".0625rem",
           background: colors.black100,
           flex: 1,
           margin: "0 .25em 0 0",
         },
         "&:after": {
           content: "",
-          height: "1px",
+          height: ".0625rem",
           background: colors.black100,
           flex: 1,
           margin: "0 0 0 .25em",
@@ -70,14 +70,14 @@ const dividerAlign = () =>
         alignItems: "center",
         "&:before": {
           content: "",
-          height: "1px",
+          height: ".0625rem",
           background: colors.black100,
           flex: 12,
           margin: "0 .25em 0 0",
         },
         "&:after": {
           content: "",
-          height: "1px",
+          height: ".0625rem",
           background: colors.black100,
           flex: 1,
           margin: "0 0 0 .25em",

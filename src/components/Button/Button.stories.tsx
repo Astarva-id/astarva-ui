@@ -15,17 +15,17 @@ export default meta;
 export const AllButton: React.FC = () => (
   <Flex
     flexDirection="column"
-    gap="36px"
-    width="1100px"
+    gap="2.25rem"
+    width="68.75rem"
     style={{
       fontFamily: "sans-serif",
     }}
   >
     {/* Large */}
-    <Flex flexDirection="column" gap="12px">
+    <Flex flexDirection="column" gap=".75rem">
       <div>Size Large</div>
-      <Flex flexWrap="wrap" gap="32px">
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+      <Flex flexWrap="wrap" gap="2rem">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button>Primary</Button>
           <Button disabled>Primary</Button>
           <Button shape="semi-round">Primary</Button>
@@ -37,7 +37,7 @@ export const AllButton: React.FC = () => (
             Primary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button variant="secondary">Secondary</Button>
           <Button variant="secondary" disabled>
             Secondary
@@ -55,7 +55,7 @@ export const AllButton: React.FC = () => (
             Secondary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button variant="tertiary">Tertiary</Button>
           <Button variant="tertiary" disabled>
             Tertiary
@@ -76,10 +76,10 @@ export const AllButton: React.FC = () => (
       </Flex>
     </Flex>
 
-    <Flex flexDirection="column" gap="12px">
+    <Flex flexDirection="column" gap=".75rem">
       <div>Size Medium</div>
-      <Flex flexWrap="wrap" gap="32px">
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+      <Flex flexWrap="wrap" gap="2rem">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button size="medium">Primary</Button>
           <Button size="medium" disabled>
             Primary
@@ -97,7 +97,7 @@ export const AllButton: React.FC = () => (
             Primary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button size="medium" variant="secondary">
             Secondary
           </Button>
@@ -117,7 +117,7 @@ export const AllButton: React.FC = () => (
             Secondary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button size="medium" variant="tertiary">
             Tertiary
           </Button>
@@ -140,10 +140,10 @@ export const AllButton: React.FC = () => (
       </Flex>
     </Flex>
 
-    <Flex flexDirection="column" gap="12px">
+    <Flex flexDirection="column" gap=".75rem">
       <div>Size Small</div>
-      <Flex flexWrap="wrap" gap="32px">
-        <Flex flexWrap="wrap" gap="16px" width="260px">
+      <Flex flexWrap="wrap" gap="2rem">
+        <Flex flexWrap="wrap" gap="1rem" width="16.25rem">
           <Button size="small">Primary</Button>
           <Button size="small" disabled>
             Primary
@@ -161,7 +161,7 @@ export const AllButton: React.FC = () => (
             Primary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="260px">
+        <Flex flexWrap="wrap" gap="1rem" width="16.25rem">
           <Button size="small" variant="secondary">
             Secondary
           </Button>
@@ -181,7 +181,7 @@ export const AllButton: React.FC = () => (
             Secondary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="260px">
+        <Flex flexWrap="wrap" gap="1rem" width="16.25rem">
           <Button size="small" variant="tertiary">
             Tertiary
           </Button>
@@ -209,17 +209,17 @@ export const AllButton: React.FC = () => (
 export const AllButtonCustomColor: React.FC = () => (
   <Flex
     flexDirection="column"
-    gap="36px"
-    width="1100px"
+    gap="2.25rem"
+    width="68.75rem"
     style={{
       fontFamily: "sans-serif",
     }}
   >
     {/* Large */}
-    <Flex flexDirection="column" gap="12px">
+    <Flex flexDirection="column" gap=".75rem">
       <div>Size Large</div>
-      <Flex flexWrap="wrap" gap="32px">
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+      <Flex flexWrap="wrap" gap="2rem">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button backgroundColor="green500" backgroundColorHover="green700">
             Primary
           </Button>
@@ -261,7 +261,7 @@ export const AllButtonCustomColor: React.FC = () => (
             Primary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button
             backgroundColor="green500"
             backgroundColorHover="green100"
@@ -312,7 +312,7 @@ export const AllButtonCustomColor: React.FC = () => (
             Secondary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button backgroundColor="green500" variant="tertiary">
             Tertiary
           </Button>
@@ -349,10 +349,10 @@ export const AllButtonCustomColor: React.FC = () => (
       </Flex>
     </Flex>
 
-    <Flex flexDirection="column" gap="12px">
+    <Flex flexDirection="column" gap=".75rem">
       <div>Size Medium</div>
-      <Flex flexWrap="wrap" gap="32px">
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+      <Flex flexWrap="wrap" gap="2rem">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button
             backgroundColor="green500"
             backgroundColorHover="green700"
@@ -403,7 +403,7 @@ export const AllButtonCustomColor: React.FC = () => (
             Primary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button
             backgroundColor="green500"
             backgroundColorHover="green100"
@@ -460,7 +460,7 @@ export const AllButtonCustomColor: React.FC = () => (
             Secondary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="300px">
+        <Flex flexWrap="wrap" gap="1rem" width="18.75rem">
           <Button backgroundColor="green500" size="medium" variant="tertiary">
             Tertiary
           </Button>
@@ -510,10 +510,10 @@ export const AllButtonCustomColor: React.FC = () => (
       </Flex>
     </Flex>
 
-    <Flex flexDirection="column" gap="12px">
+    <Flex flexDirection="column" gap=".75rem">
       <div>Size Small</div>
-      <Flex flexWrap="wrap" gap="32px">
-        <Flex flexWrap="wrap" gap="16px" width="260px">
+      <Flex flexWrap="wrap" gap="2rem">
+        <Flex flexWrap="wrap" gap="1rem" width="16.25rem">
           <Button
             backgroundColor="green500"
             backgroundColorHover="green700"
@@ -564,7 +564,7 @@ export const AllButtonCustomColor: React.FC = () => (
             Primary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="260px">
+        <Flex flexWrap="wrap" gap="1rem" width="16.25rem">
           <Button
             backgroundColor="green500"
             backgroundColorHover="green100"
@@ -621,7 +621,7 @@ export const AllButtonCustomColor: React.FC = () => (
             Secondary
           </Button>
         </Flex>
-        <Flex flexWrap="wrap" gap="16px" width="260px">
+        <Flex flexWrap="wrap" gap="1rem" width="16.25rem">
           <Button backgroundColor="green500" size="small" variant="tertiary">
             Tertiary
           </Button>

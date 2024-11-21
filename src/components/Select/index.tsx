@@ -47,7 +47,7 @@ const Select: React.FC<SelectProps> = ({
         </Text>
 
         <Icon
-          size={size === "regular" ? "20px" : "20px"}
+          size={size === "regular" ? "1.25rem" : "1.25rem"}
           name={isOpen ? "Up-outline" : "Down-outline"}
         />
         {isOpen && (

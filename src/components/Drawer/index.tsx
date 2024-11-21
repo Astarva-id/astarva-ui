@@ -1,0 +1,40 @@
+import Box from "@components/Box";
+import Overlay from "@components/Overlay";
+import React, { useEffect } from "react";
+import { createPortal } from "react-dom";
+
+import { DrawerContent } from "./Drawer.styled";
+import { DrawerProps } from "./Drawer.types";
+
+const Drawer: React.FC<DrawerProps> = ({
+  children,
+  closeable,
+  isVisible,
+  isFullHeight,
+  onClose,
+  ...props
+}) => {
+  useEffect(() => {
+    if (isVisible) {
+      document.body.style.overflowY = "hidden";
+    }
+    document.body.style.removeProperty("overflow-y");
+  }, [isVisible]);
+
+  return createPortal(
+    <Box>
+      <Overlay isVisible={isVisible} onClick={closeable && onClose} />
+
+      <DrawerContent
+        isVisible={isVisible}
+        isFullHeight={isFullHeight}
+        {...props}
+      >
+        {children}
+      </DrawerContent>
+    </Box>,
+    document.body
+  );
+};
+
+export default Drawer;

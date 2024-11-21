@@ -21,10 +21,10 @@ export const CirclePath = styled(Box)<{ percent: number; strokeColor: string }>`
   stroke-width: 8;
   opacity: 1;
   box-sizing: border-box;
-  stroke-dasharray: 295.31px, 295.31;
+  stroke-dasharray: 18.4569rem, 295.31;
   stroke-dashoffset: ${(props) => 295.31 / (100 / (100 - props.percent))};
   transform: rotate(-90deg);
-  transform-origin: 0px 0px;
+  transform-origin: 0rem 0rem;
   fill-opacity: 0;
   stroke: ${(props) => props.strokeColor};
 `;

@@ -17,7 +17,7 @@ const Divider: React.FC<DividerProps> = ({
     {...restProps}
     aria-label="divider-wrapper"
   >
-    <Box paddingX={orientation === "horizontal" && "12px"}>
+    <Box paddingX={orientation === "horizontal" && ".75rem"}>
       <Text variant="small" color="black500" {..._textStyle}>
         {children}
       </Text>

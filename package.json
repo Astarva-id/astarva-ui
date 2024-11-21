@@ -1,6 +1,6 @@
 {
   "name": "astarva-ui",
-  "version": "1.1.41",
+  "version": "1.2.42",
   "main": "dist/astarva-ui.umd.js",
   "module": "dist/astarva-ui.es.js",
   "types": "dist/types/index.d.ts",

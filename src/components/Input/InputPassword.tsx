@@ -48,7 +48,7 @@ export const InputPassword = React.forwardRef<
       onBlur?.(event);
     };
     return (
-      <Flex flexDirection="column" gap="10px" onClick={onClickInput}>
+      <Flex flexDirection="column" gap=".625rem" onClick={onClickInput}>
         {label && (
           <Text weight="medium" color="black900">
             {label}

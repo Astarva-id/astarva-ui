@@ -35,23 +35,23 @@ export const AllIcon: React.FC = () => {
   return (
     <Flex
       flexDirection="column"
-      gap="120px"
+      gap="7.5rem"
       style={{
         fontFamily: "sans-serif",
       }}
     >
       {/* Circle */}
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Circle Icon</Text>
-        <Flex gap="24px" maxWidth="80%" flexWrap="wrap">
+        <Flex gap="1.5rem" maxWidth="80%" flexWrap="wrap">
           {groupIcons().circle.map((icon, index) => {
             return (
               <Flex
-                width="100px"
+                width="6.25rem"
                 flexWrap="wrap"
                 flexDirection="column"
                 alignItems="center"
-                gap="8px"
+                gap=".5rem"
                 textAlign="center"
                 key={index}
               >
@@ -62,17 +62,17 @@ export const AllIcon: React.FC = () => {
           })}
         </Flex>
       </Flex>
-      <Flex flexDirection="column" gap="24px">
+      <Flex flexDirection="column" gap="1.5rem">
         <Text>Outline Icon</Text>
-        <Flex gap="24px" maxWidth="80%" flexWrap="wrap">
+        <Flex gap="1.5rem" maxWidth="80%" flexWrap="wrap">
           {groupIcons().outline.map((icon, index) => {
             return (
               <Flex
-                width="100px"
+                width="6.25rem"
                 flexWrap="wrap"
                 flexDirection="column"
                 alignItems="center"
-                gap="8px"
+                gap=".5rem"
                 textAlign="center"
                 key={index}
               >

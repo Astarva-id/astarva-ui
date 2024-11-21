@@ -14,8 +14,8 @@ const meta: Meta<DividerProps> = {
 export default meta;
 
 export const AllDivider = () => (
-  <Flex flexDirection="column" rowGap="16px" fontFamily="sans-serif">
-    <Flex flex={1} flexDirection="column" rowGap="10px">
+  <Flex flexDirection="column" rowGap="1rem" fontFamily="sans-serif">
+    <Flex flex={1} flexDirection="column" rowGap=".625rem">
       <Text variant="heading2" weight="bold">
         Horizontal Divider
       </Text>
@@ -45,22 +45,22 @@ export const AllDivider = () => (
         of Lorem Ipsum.
       </Text>
     </Flex>
-    <Flex flex={1} flexDirection="column" rowGap="10px">
+    <Flex flex={1} flexDirection="column" rowGap=".625rem">
       <Text variant="heading2" weight="bold">
         Vertical Divider
       </Text>
       <Flex flexDirection="row">
-        <Divider orientation="vertical" marginX="10px" />
+        <Divider orientation="vertical" marginX=".625rem" />
         <Text variant="small" color="black500">
           Link
         </Text>
-        <Divider orientation="vertical" marginX="10px" />
+        <Divider orientation="vertical" marginX=".625rem" />
         <Text variant="small" color="black500">
           Link
         </Text>
       </Flex>
     </Flex>
-    <Flex flex={1} flexDirection="column" rowGap="10px">
+    <Flex flex={1} flexDirection="column" rowGap=".625rem">
       <Text variant="heading2" weight="bold">
         Divider with Text
       </Text>

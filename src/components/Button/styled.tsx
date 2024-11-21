@@ -15,7 +15,7 @@ export const StyledButton: React.FC<ButtonProps> = styled.button<ButtonProps>`
   ${buttonSize}
   width: ${(props) => (props.isBlock ? "100% !important" : "fit-content")};
   height: fit-content;
-  column-gap: 24px;
+  column-gap: 1.5rem;
   backgroundcolor: ${(props) => props.backgroundColor};
   padding: ${(props) => props.padding};
 `;
@@ -23,5 +23,5 @@ export const StyledButton: React.FC<ButtonProps> = styled.button<ButtonProps>`
 export const PreffixWrapper = styled.span`
   display: flex;
   align-items: center;
-  column-gap: 8px;
+  column-gap: 0.5rem;
 `;

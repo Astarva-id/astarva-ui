@@ -12,9 +12,9 @@ export default {
 } as Meta<SkeletonProps>;
 
 export const AllSkeleton = () => (
-  <Flex flexDirection="column" rowGap="16px" fontFamily="sans-serif">
+  <Flex flexDirection="column" rowGap="1rem" fontFamily="sans-serif">
     <Text variant="heading3">Default Skeleton</Text>
-    <Flex width="60%" fontFamily="sans-serif" columnGap="8px">
+    <Flex width="60%" fontFamily="sans-serif" columnGap=".5rem">
       <Skeleton />
     </Flex>
   </Flex>

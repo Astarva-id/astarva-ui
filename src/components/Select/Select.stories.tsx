@@ -34,8 +34,8 @@ export const SingleSelect: React.FC = () => {
   return (
     <Flex
       flexDirection="column"
-      maxWidth="400px"
-      gap="16px"
+      maxWidth="25rem"
+      gap="1rem"
       style={{
         fontFamily: "sans-serif",
       }}

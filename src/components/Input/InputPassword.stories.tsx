@@ -14,10 +14,10 @@ const meta: Meta<InputProps> = {
 export default meta;
 
 export const InputPassword: React.FC = () => (
-  <Flex flexDirection="column" gap="48px" maxWidth="400px">
-    <Flex flexDirection="column" gap="24px">
+  <Flex flexDirection="column" gap="3rem" maxWidth="25rem">
+    <Flex flexDirection="column" gap="1.5rem">
       <Text>Input Password - Regular</Text>
-      <Flex flexDirection="column" gap="8px">
+      <Flex flexDirection="column" gap=".5rem">
         <Input.Password label="Password" />
 
         <Input.Password disabled />
@@ -27,9 +27,9 @@ export const InputPassword: React.FC = () => (
       </Flex>
     </Flex>
 
-    <Flex flexDirection="column" gap="24px">
+    <Flex flexDirection="column" gap="1.5rem">
       <Text>Input Password - Small</Text>
-      <Flex flexDirection="column" gap="8px">
+      <Flex flexDirection="column" gap=".5rem">
         <Input.Password size="small" label="Password" />
 
         <Input.Password size="small" disabled />

@@ -14,7 +14,7 @@ const animations = () => {
       top: 0;
       width: 100%;
       height: 100%;
-      transform: translateX(-100px);
+      transform: translateX(-6.25rem);
       background: linear-gradient(
         90deg,
         transparent,
@@ -22,7 +22,7 @@ const animations = () => {
         transparent
       );
       animation: loading 0.8s infinite;
-      border-radius: 8px;
+      border-radius: 0.5rem;
     }
 
     @keyframes loading {
