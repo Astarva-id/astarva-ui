@@ -12,6 +12,7 @@ const Drawer: React.FC<DrawerProps> = ({
   isVisible,
   isFullHeight,
   onClose,
+  zIndex,
   ...props
 }) => {
   useEffect(() => {
@@ -23,9 +24,14 @@ const Drawer: React.FC<DrawerProps> = ({
 
   return createPortal(
     <Box>
-      <Overlay isVisible={isVisible} onClick={closeable && onClose} />
+      <Overlay
+        zIndex={zIndex}
+        isVisible={isVisible}
+        onClick={closeable && onClose}
+      />
 
       <DrawerContent
+        zIndex={zIndex}
         isVisible={isVisible}
         isFullHeight={isFullHeight}
         {...props}

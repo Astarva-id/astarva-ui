@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 
+import { ModalContent, Overlay } from "./Modal.styled";
 import { ModalProps } from "./Modal.types";
-import { ModalContent, Overlay } from "./styled";
 
 const Modal: React.FC<ModalProps> = ({
   isVisible,
@@ -10,6 +10,7 @@ const Modal: React.FC<ModalProps> = ({
   children,
   closable,
   padding,
+  zIndex = 1,
   width = "100%",
   height = "fit-content",
   onClose,
@@ -27,6 +28,7 @@ const Modal: React.FC<ModalProps> = ({
   return createPortal(
     <Overlay
       isVisible={isVisible}
+      zIndex={zIndex}
       verticalCentered={verticalCentered}
       onClick={closable && onClose}
     >

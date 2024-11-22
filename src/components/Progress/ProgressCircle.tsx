@@ -5,7 +5,7 @@ import Box from "../Box";
 import Flex from "../Flex";
 import Text from "../Text";
 import { ProgressCircleProps } from "./Progress.types";
-import { CirclePath, CircleTrail } from "./styled";
+import { CirclePath, CircleTrail } from "./ProgressCircle.styled";
 
 export const ProgressCircle: React.FC<ProgressCircleProps> = ({
   color = "blue400",

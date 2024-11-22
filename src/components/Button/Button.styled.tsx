@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { ButtonProps } from "./Button.types";
-import { buttonShape, buttonSize, buttonVariant } from "./variant";
+import { buttonShape, buttonSize, buttonVariant } from "./Button.variant";
 
 export const StyledButton: React.FC<ButtonProps> = styled.button<ButtonProps>`
   cursor: pointer;

@@ -5,7 +5,7 @@ import styled, { css } from "styled-components";
 import { space } from "styled-system";
 
 import { TextProps, VariantMappingType } from "./Text.types";
-import { textVariant, weightVariant } from "./variant";
+import { textVariant, weightVariant } from "./Text.variant";
 
 const variantMapping: VariantMappingType = {
   heading1: "h1",

@@ -2,9 +2,9 @@ import Flex from "@components/Flex";
 import Text from "@components/Text";
 import React, { useRef, useState } from "react";
 
+import { InputWrapper, PlainInput, StyledInput } from "./Input.styled";
 import { AllInput, InputProps } from "./Input.types";
 import { InputPassword } from "./InputPassword";
-import { InputWrapper, PlainInput, StyledInput } from "./styled";
 
 export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
   (

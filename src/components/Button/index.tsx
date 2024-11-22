@@ -1,7 +1,7 @@
 import React from "react";
 
+import { PreffixWrapper, StyledButton } from "./Button.styled";
 import { ButtonProps } from "./Button.types";
-import { PreffixWrapper, StyledButton } from "./styled";
 
 const Button: React.FC<ButtonProps> = ({
   variant = "primary",

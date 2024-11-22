@@ -6,8 +6,8 @@ import useClickOutside from "@hooks/useClickOutside";
 import useDisclosure from "@hooks/useDisclosure";
 import React, { useRef } from "react";
 
+import { InputSelect, Item } from "./Select.styled";
 import { Option, SelectProps } from "./Select.types";
-import { InputSelect, Item } from "./styled";
 
 const Select: React.FC<SelectProps> = ({
   label,

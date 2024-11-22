@@ -1,7 +1,7 @@
 import React from "react";
 
+import { StyledBox } from "./Skeleton.styled";
 import { SkeletonProps } from "./Skeleton.types";
-import { StyledBox } from "./styled";
 
 const Skeleton: React.FC<SkeletonProps> = ({
   width = "100%",

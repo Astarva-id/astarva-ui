@@ -12,7 +12,7 @@ export const DrawerContent = styled(Flex)<DrawerProps>`
   right: 0;
   background-color: white;
   height: max-content;
-  z-index: 2;
+  z-index: ${(props) => props.zIndex};
   padding: 1.25rem;
   animation: ${(props) => (props.isVisible ? slideBottomIn : slideBottomOut)}
     0.3s ease-in;

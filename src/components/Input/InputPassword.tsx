@@ -3,8 +3,8 @@ import Icon from "@components/Icon";
 import Text from "@components/Text";
 import React, { useRef, useState } from "react";
 
+import { InputWrapper, PlainInput } from "./Input.styled";
 import { InputPasswordProps } from "./Input.types";
-import { InputWrapper, PlainInput } from "./styled";
 
 export const InputPassword = React.forwardRef<
   HTMLInputElement,

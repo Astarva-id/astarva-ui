@@ -4,7 +4,7 @@ import Flex from "@components/Flex";
 import styled, { css } from "styled-components";
 
 import { InputSelectProps } from "./Select.types";
-import { itemSelect, selectVariant, textValueSelect } from "./variants";
+import { itemSelect, selectVariant, textValueSelect } from "./Select.variants";
 
 export const Item = styled(Box)`
   ${itemSelect}

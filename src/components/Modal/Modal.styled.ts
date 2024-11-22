@@ -1,71 +1,17 @@
 import colors from "@components/Colors";
 import Flex from "@components/Flex";
-import styled, { css, keyframes } from "styled-components";
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`;
-
-const slideIn = keyframes`
-  from {
-    transform: translateY(-3.125rem);
-    opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-    opacity: 1;
-  }
-`;
-
-const slideOut = keyframes`
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-3.125rem);
-    opacity: 0;
-  }
-`;
-
-const scaleIn = keyframes`
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
-
-const scaleOut = keyframes`
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(0);
-    opacity: 0;
-  }
-`;
+import {
+  fadeIn,
+  fadeOut,
+  scaleIn,
+  scaleOut,
+  slideIn,
+  slideOut,
+} from "@styles/animation.styled";
+import styled, { css } from "styled-components";
 
 export const Overlay = styled(Flex)`
-  zindex: 1000;
+  z-index: ${(props) => props.zIndex};
   width: 100vw;
   height: 100vh;
   position: fixed;

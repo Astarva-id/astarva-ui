@@ -2,7 +2,7 @@ import colors from "@components/Colors";
 import styled, { css } from "styled-components";
 
 import { InputProps } from "./Input.types";
-import { inputVariant, inputWrapperVariant } from "./variant";
+import { inputVariant, inputWrapperVariant } from "./Input.variant";
 
 export const StyledInput: React.FC<InputProps> = styled.input<InputProps>`
   ${(props) => inputVariant(props)}

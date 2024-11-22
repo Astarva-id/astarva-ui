@@ -3,8 +3,8 @@ import React from "react";
 
 import Box from "../Box";
 import Text from "../Text";
+import { StyledDivider } from "./Divider.styled";
 import { DividerProps } from "./Divider.types";
-import { StyledDivider } from "./styled";
 
 const Divider: React.FC<DividerProps> = ({
   children,

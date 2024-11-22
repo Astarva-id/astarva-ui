@@ -1,4 +1,5 @@
 import Button from "@components/Button";
+import Drawer from "@components/Drawer";
 import Flex from "@components/Flex";
 import Text from "@components/Text";
 import useDisclosure from "@hooks/useDisclosure";
@@ -167,6 +168,95 @@ export const ModalAll: React.FC = () => {
       >
         Modal Closeable
       </Button>
+    </Flex>
+  );
+};
+
+export const ModalNested: React.FC = () => {
+  const modalDisclosure = useDisclosure({ open: false });
+  const drawerDisclosure = useDisclosure({ open: false });
+  return (
+    <Flex>
+      {/* Modal - Vertical Center */}
+      <Modal
+        zIndex={10}
+        isVisible={modalDisclosure.isOpen}
+        width="18.75rem"
+        flexDirection="column"
+        padding="1.25rem"
+        gap="1.5rem"
+        verticalCentered
+        onClose={modalDisclosure.onClose}
+      >
+        <Flex flex={1} justifyContent="center">
+          <Text variant="large" weight="semi-bold">
+            Confirmation
+          </Text>
+        </Flex>
+        <Text textAlign="center" color="black300" variant="small">
+          Are you sure want to delete this?
+        </Text>
+
+        <Flex gap=".75rem">
+          <Button
+            isBlock
+            variant="primary"
+            size="small"
+            shape="semi-round"
+            onClick={drawerDisclosure.onOpen}
+          >
+            Oke
+          </Button>
+          <Button
+            isBlock
+            variant="secondary"
+            size="small"
+            shape="semi-round"
+            onClick={modalDisclosure.onClose}
+          >
+            Cancel
+          </Button>
+        </Flex>
+      </Modal>
+      <Button size="small" shape="semi-round" onClick={modalDisclosure.onOpen}>
+        Modal Vertical Center
+      </Button>
+
+      {/* Drawer */}
+      <Drawer
+        zIndex={20}
+        gap="1.25rem"
+        isVisible={drawerDisclosure.isOpen}
+        onClose={drawerDisclosure.onClose}
+      >
+        <Text textAlign="center" variant="large" weight="semi-bold">
+          Confirmation
+        </Text>
+        <Text textAlign="center" color="black300" variant="small">
+          Are you sure want to delete this?
+        </Text>
+
+        <Flex gap=".75rem">
+          <Button
+            isBlock
+            variant="primary"
+            size="small"
+            shape="semi-round"
+            onClick={drawerDisclosure.onClose}
+          >
+            Oke
+          </Button>
+          <Button
+            isBlock
+            variant="secondary"
+            size="small"
+            shape="semi-round"
+            onClick={drawerDisclosure.onClose}
+          >
+            Cancel
+          </Button>
+        </Flex>
+      </Drawer>
     </Flex>
   );
 };
