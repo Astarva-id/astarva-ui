@@ -12,7 +12,7 @@ const Drawer: React.FC<DrawerProps> = ({
   isVisible,
   isFullHeight,
   onClose,
-  zIndex,
+  zIndex = 1,
   ...props
 }) => {
   useEffect(() => {
