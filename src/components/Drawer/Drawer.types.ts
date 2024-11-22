@@ -7,5 +7,5 @@ export interface DrawerProps extends Omit<FlexProps, "zIndex"> {
   children?: ReactNode;
   closeable?: boolean;
   zIndex?: number;
-  onClose: () => void;
+  onClose?: () => void;
 }
