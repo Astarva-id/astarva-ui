@@ -18,8 +18,9 @@ const Drawer: React.FC<DrawerProps> = ({
   useEffect(() => {
     if (isVisible) {
       document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.removeProperty("overflow-y");
     }
-    document.body.style.removeProperty("overflow-y");
   }, [isVisible]);
 
   return createPortal(

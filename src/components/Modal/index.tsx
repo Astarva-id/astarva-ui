@@ -19,8 +19,9 @@ const Modal: React.FC<ModalProps> = ({
   useEffect(() => {
     if (isVisible) {
       document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.removeProperty("overflow-y");
     }
-    document.body.style.removeProperty("overflow-y");
   }, [isVisible]);
 
   if (!isVisible) return null;
