@@ -57,3 +57,36 @@ export const ProgressCircle: React.FC = () => (
     </Progress.Circle>
   </Flex>
 );
+
+export const ProgressBarCustom: React.FC = () => (
+  <Flex
+    flexDirection="column"
+    gap="1rem"
+    style={{
+      fontFamily: "sans-serif",
+    }}
+  >
+    <Progress.Bar
+      color="greenyellow500"
+      width="31.25rem"
+      height=".625rem"
+      textInside={false}
+      percent={80}
+    />
+    <Progress.Bar
+      color="greenyellow500"
+      width="31.25rem"
+      height=".625rem"
+      textInside={false}
+      percent={120}
+    />
+    <Progress.Bar
+      color="greenyellow500"
+      width="31.25rem"
+      height=".625rem"
+      withoutLimit
+      textInside={false}
+      percent={120}
+    />
+  </Flex>
+);

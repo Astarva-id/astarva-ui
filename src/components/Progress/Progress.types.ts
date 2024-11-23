@@ -6,6 +6,8 @@ export interface ProgressBarProps extends BoxProps {
   percent: number;
   _text?: TextProps;
   color?: colorIndex;
+  textInside?: boolean;
+  withoutLimit?: boolean;
 }
 
 export interface ProgressCircleProps extends BoxProps {
