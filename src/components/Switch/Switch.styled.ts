@@ -6,6 +6,7 @@ import styled, { css } from "styled-components";
 import { switchCircleVariant, switchVariant } from "./Switch.variant";
 
 export const SwitchComponent = styled(Flex)`
+  box-sizing: border-box;
   position: relative;
   width: 100%;
   border-radius: 1.25rem;

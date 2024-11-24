@@ -6,12 +6,10 @@ export const switchVariant = () =>
     prop: "size",
     variants: {
       small: {
-        height: "1rem",
-        maxWidth: "3rem",
+        maxWidth: "3.5rem",
       },
       regular: {
-        height: "1.25rem",
-        maxWidth: "3.75rem",
+        maxWidth: "4.25rem",
       },
     },
   });
