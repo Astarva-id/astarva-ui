@@ -1,6 +1,7 @@
 import colors from "@components/Colors";
 import Flex from "@components/Flex";
 import Icon from "@components/Icon";
+import ScrollBar from "@components/ScrollBar";
 import Text from "@components/Text";
 import useClickOutside from "@hooks/useClickOutside";
 import useDisclosure from "@hooks/useDisclosure";
@@ -10,13 +11,14 @@ import { InputSelect, Item } from "./Select.styled";
 import { Option, SelectProps } from "./Select.types";
 
 const Select: React.FC<SelectProps> = ({
+  error = "This field is required",
+  isError,
   label,
+  maxHeight = "12.5rem",
   options,
   placeholder = "Select Your Input...",
-  value,
-  error = "This field is required",
   size = "regular",
-  isError,
+  value,
   onSelect,
   ...props
 }) => {
@@ -51,7 +53,7 @@ const Select: React.FC<SelectProps> = ({
           name={isOpen ? "Up-outline" : "Down-outline"}
         />
         {isOpen && (
-          <Flex
+          <ScrollBar
             id="list"
             position="absolute"
             left="0"
@@ -62,6 +64,8 @@ const Select: React.FC<SelectProps> = ({
             border={`.0625rem solid ${colors.black100}`}
             borderRadius=".375rem"
             padding=".25rem"
+            maxHeight={maxHeight}
+            overflowY="auto"
           >
             {options.map((option, key) => {
               return (
@@ -79,7 +83,7 @@ const Select: React.FC<SelectProps> = ({
                 </Item>
               );
             })}
-          </Flex>
+          </ScrollBar>
         )}
       </InputSelect>
 

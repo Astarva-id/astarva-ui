@@ -1,4 +1,5 @@
 import { FlexProps } from "@components/Flex/Flex.types";
+import { CSSProperties } from "styled-components";
 
 export interface Option {
   value: string;
@@ -11,6 +12,7 @@ export interface SelectProps {
   label?: string;
   options: Option[];
   placeholder?: string;
+  maxHeight?: CSSProperties["maxHeight"];
   size?: "small" | "regular";
   value: string;
   onSelect: (options: Option) => void;

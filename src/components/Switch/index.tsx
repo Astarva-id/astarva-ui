@@ -13,6 +13,7 @@ const Switch: React.FC<SwitchProps> = ({
   const [hasChanges, setHasChanges] = useState(false);
 
   const handleChange = () => {
+    if (disabled) return;
     onChange(!active);
     setHasChanges(true);
   };

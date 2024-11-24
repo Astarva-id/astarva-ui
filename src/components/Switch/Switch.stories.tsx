@@ -1,3 +1,4 @@
+import Text from "@components/Text";
 import { Meta } from "@storybook/react";
 import React, { useState } from "react";
 
@@ -11,10 +12,24 @@ export default {
 } as Meta<SwitchProps>;
 
 export const AllSwitch = () => {
-  const [isActive, setIsActive] = useState(true);
+  const [switchActive, setSwitchActive] = useState(false);
+  const [switchDisable, setSwitchDisable] = useState(true);
   return (
     <Flex flexDirection="column" rowGap="1rem" fontFamily="sans-serif">
-      <Switch disabled active={isActive} onChange={setIsActive} />
+      <Text>Regular - Switch Not Disabled</Text>
+      <Switch active={switchActive} onChange={setSwitchActive} />
+      <Text>Regular - Switch Disabled</Text>
+      <Switch disabled active={switchDisable} onChange={setSwitchDisable} />
+
+      <Text>Small - Switch Not Disabled</Text>
+      <Switch active={switchActive} size="small" onChange={setSwitchActive} />
+      <Text>Small - Switch Disabled</Text>
+      <Switch
+        active={switchDisable}
+        disabled
+        size="small"
+        onChange={setSwitchDisable}
+      />
     </Flex>
   );
 };

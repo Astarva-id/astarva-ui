@@ -14,16 +14,32 @@ export const SingleSelect: React.FC = () => {
   const [selectValue, setSelectValue] = useState(null);
   const options = [
     {
+      label: "Reading",
+      value: "reading",
+    },
+    {
+      label: "Watching",
+      value: "watching",
+    },
+    {
       label: "Running",
       value: "running",
     },
     {
-      label: "Fishing",
-      value: "fishing",
+      label: "Sleeping",
+      value: "sleeping",
     },
     {
-      label: "Reading",
-      value: "reading",
+      label: "Vacation",
+      value: "vacation",
+    },
+    {
+      label: "Photography",
+      value: "photography",
+    },
+    {
+      label: "Language",
+      value: "language",
     },
   ];
 
