@@ -1,9 +1,7 @@
 import colors from "@components/Colors";
 import { variant } from "styled-system";
 
-import { SwitchProps } from "./Switch.types";
-
-export const switchVariant = (props: SwitchProps) =>
+export const switchVariant = () =>
   variant({
     prop: "size",
     variants: {
@@ -12,16 +10,8 @@ export const switchVariant = (props: SwitchProps) =>
         maxWidth: "3rem",
       },
       regular: {
-        position: "relative",
-        borderRadius: "1.25rem",
-        padding: ".25rem",
         height: "1.25rem",
-        width: "100%",
         maxWidth: "3.75rem",
-        cursor: "pointer",
-        transition: "background-color .3s ease-in",
-        backgroundColor: `${props.active ? colors.blue400 : colors.black100}`,
-        opacity: `${props.disabled ? ".5" : "1"}`,
       },
     },
   });
