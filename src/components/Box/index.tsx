@@ -2,8 +2,8 @@ import { overrideColorConfig } from "@utils/globals";
 import React from "react";
 import styled from "styled-components";
 import {
-  background,
   border,
+  color,
   flex,
   layout,
   opacity,
@@ -13,13 +13,20 @@ import {
   typography,
 } from "styled-system";
 
-import type { BoxProps, PolymorphBoxProps, PolymorphicRef } from "./Box.types";
+import type {
+  BoxComponent,
+  BoxProps,
+  PolymorphBoxProps,
+  PolymorphicRef,
+} from "./Box.types";
 
 const StyledBox: React.FC<PolymorphBoxProps<React.ElementType>> = styled.div<
   BoxProps<React.ElementType>
 >`
+  cursor: ${(props) => props.cursor};
+  box-sizing: ${(props) => props.boxSizing};
+  ${color}
   ${layout}
-  ${background}
   ${border}
   ${shadow}
   ${space}
@@ -28,11 +35,9 @@ const StyledBox: React.FC<PolymorphBoxProps<React.ElementType>> = styled.div<
   ${opacity}
   ${overrideColorConfig}
   ${flex}
-  cursor: ${(props) => props.cursor};
-  box-sizing: ${(props) => props.boxSizing};
 `;
 
-const Box = React.forwardRef(
+const Box: BoxComponent = React.forwardRef(
   <C extends React.ElementType = "div">(
     props: PolymorphBoxProps<C>,
     ref?: PolymorphicRef<C>

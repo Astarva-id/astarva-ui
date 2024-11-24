@@ -40,7 +40,7 @@ const StyledFlex: React.FC<PolymorphFlexProps<React.ElementType>> = styled.div<
 
 const Flex: FlexComponent = React.forwardRef(
   <C extends React.ElementType = "div">(
-    { ...props }: PolymorphFlexProps<C>,
+    props: PolymorphFlexProps<C>,
     ref?: PolymorphicRef<C>
   ) => <StyledFlex ref={ref} {...props} />
 );

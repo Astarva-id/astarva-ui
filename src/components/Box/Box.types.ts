@@ -54,11 +54,6 @@ export type PolymorphBoxProps<C extends React.ElementType> = BoxProps<C> &
 export type PolymorphicRef<C extends React.ElementType> =
   React.ComponentPropsWithRef<C>["ref"];
 
-type PolymorphicComponentPropWithRef<C extends React.ElementType> =
-  PolymorphBoxProps<C> & {
-    ref?: PolymorphicRef<C>;
-  };
-
-export type BoxComponent = <C extends React.ElementType = "div">(
-  props: PolymorphicComponentPropWithRef<C>
-) => React.ReactElement | null;
+export type BoxComponent = React.ForwardRefExoticComponent<
+  PolymorphBoxProps<React.ElementType> & React.RefAttributes<HTMLElement>
+>;

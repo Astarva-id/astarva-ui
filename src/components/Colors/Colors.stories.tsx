@@ -6,6 +6,7 @@ import { Meta } from "@storybook/react";
 import React from "react";
 
 import colors from ".";
+import { colorIndex } from "./Colors.types";
 
 const meta: Meta<BoxProps> = {
   title: "Theme/Colors",
@@ -37,7 +38,7 @@ export const Colors: React.FC = () => {
         fontFamily: "sans-serif",
       }}
     >
-      {groupColors(Object.keys(colors)).map((arrColor, index) => {
+      {groupColors(Object.keys(colors)).map((arrColor: colorIndex[], index) => {
         return (
           <Flex gap=".5rem" key={index}>
             {arrColor.map((color, idx) => {
