@@ -55,10 +55,18 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
 
 function TextPercentage({ percent, _textStyle }) {
   return (
-    <Box position="absolute" top="0" left="0" right="0" textAlign="center">
+    <Flex
+      justifyContent="center"
+      alignItems="center"
+      position="absolute"
+      top="0"
+      left="0"
+      right="0"
+      bottom="0"
+    >
       <Text variant="micro" {..._textStyle}>
         {percent}
       </Text>
-    </Box>
+    </Flex>
   );
 }
