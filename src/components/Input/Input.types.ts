@@ -12,7 +12,6 @@ export interface InputProps
   hint?: string;
   label?: string;
   _label?: TextProps;
-  // showCount?: boolean;
   maxLength?: number;
   value?: string;
   noBorder?: boolean;
