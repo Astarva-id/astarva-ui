@@ -10,7 +10,7 @@ import ScrollBar from "@components/ScrollBar";
 import Text from "@components/Text";
 import useClickOutside from "@hooks/useClickOutside";
 import useDisclosure from "@hooks/useDisclosure";
-import { datePicker } from "@utils/datepicker";
+import { lodash } from "@utils/lodash";
 import React, { useRef } from "react";
 import ReactDatePicker from "react-datepicker";
 
@@ -76,7 +76,7 @@ const HeaderDatePicker: React.FC<DatePickerHeaderProps> = ({
   onOpen,
   onClose,
 }) => {
-  const years = datePicker.rangeOfYears(1900);
+  const years = lodash.range(1900, new Date().getFullYear());
   const months = [
     "January",
     "February",
