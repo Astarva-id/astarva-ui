@@ -21,7 +21,6 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
       noBorder,
       isPlain = true,
       maxLength,
-      // showCount,
       placeholder = "Input Something..",
       onBlur,
       onChange,
