@@ -90,6 +90,7 @@ const TimePicker: React.FC<TimePickerProps> = ({
         width="3.75rem"
         padding=".6875rem 1rem"
         cursor="pointer"
+        boxSizing="content-box"
         onClick={onOpen}
       >
         <Text variant="small" textAlign="center" color="black800">
