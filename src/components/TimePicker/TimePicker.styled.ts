@@ -3,6 +3,7 @@ import colors from "@components/Colors";
 import styled from "styled-components";
 
 export const Time = styled(Box)`
+  box-sizing: content-box;
   text-align: center;
   padding: 0.25rem 0;
   font-size: 0.875rem;
