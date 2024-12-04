@@ -3,7 +3,6 @@ import Flex from "@components/Flex";
 import styled from "styled-components";
 
 export const Wrapper = styled(Flex)`
-  box-sizing: border-box;
   position: relative;
 
   // Icon Calendar
