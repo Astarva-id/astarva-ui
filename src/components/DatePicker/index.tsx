@@ -18,7 +18,6 @@ import { Wrapper } from "./DatePicker.styled";
 import { DatePickerHeaderProps, DatePickerProps } from "./DatePicker.types";
 
 const DatePicker: React.FC<DatePickerProps> = ({
-  width = "15rem",
   dateFormat = "dd/MM/YYYY",
   selected,
   _textStyle,
@@ -37,7 +36,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
           {label}
         </Text>
       )}
-      <Wrapper ref={selectMonthYearRef} width={width}>
+      <Wrapper ref={selectMonthYearRef}>
         <Box className="icon-calendar">
           <Icon
             name="Calendar-outline"

@@ -3,12 +3,10 @@ import {
   DatePickerProps as ReactDatePickerProps,
   ReactDatePickerCustomHeaderProps,
 } from "react-datepicker";
-import { CSSProperties } from "styled-components";
 
 export type DatePickerProps = ReactDatePickerProps & {
   _textStyle?: TextProps;
   label?: string;
-  width?: CSSProperties["width"];
 };
 
 export type DatePickerHeaderProps = ReactDatePickerCustomHeaderProps & {

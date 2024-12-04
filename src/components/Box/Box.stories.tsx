@@ -1,4 +1,5 @@
 import Flex from "@components/Flex";
+import Text from "@components/Text";
 import { Meta } from "@storybook/react";
 import React from "react";
 
@@ -26,7 +27,15 @@ export const AllBox: React.FC = () => (
       padding="1rem"
       borderRadius=".25rem"
     >
-      <div style={{ color: "white" }}>Box Component</div>
+      <Text color="#db00d4">Box Component</Text>
+    </Box>
+    <Box
+      backgroundColor="#00db2c"
+      width="max-content"
+      padding="1rem"
+      borderRadius=".25rem"
+    >
+      <Text color="white">Box Component</Text>
     </Box>
   </Flex>
 );

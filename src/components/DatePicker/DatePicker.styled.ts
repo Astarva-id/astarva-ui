@@ -13,15 +13,20 @@ export const Wrapper = styled(Flex)`
     z-index: 1;
   }
 
-  .react-datepicker__input-container {
-    input {
-      width: ${(props) => props.width};
-      padding: 0.75rem 1rem 0.75rem 2.625rem;
-      border-radius: 0.5rem;
-      border: 0.0625rem solid ${colors.black100};
-      height: 0.875rem;
-      box-sizing: content-box;
-      outline: none;
+  .react-datepicker-wrapper {
+    width: 100%;
+    padding-right: 3.75rem;
+
+    .react-datepicker__input-container {
+      input {
+        width: 100%;
+        padding: 0.75rem 1rem 0.75rem 2.625rem;
+        border-radius: 0.5rem;
+        border: 0.0625rem solid ${colors.black100};
+        height: 0.875rem;
+        box-sizing: content-box;
+        outline: none;
+      }
     }
   }
 
