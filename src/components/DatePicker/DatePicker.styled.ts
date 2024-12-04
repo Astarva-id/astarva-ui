@@ -20,6 +20,7 @@ export const Wrapper = styled(Flex)`
       border-radius: 0.5rem;
       border: 0.0625rem solid ${colors.black100};
       height: 0.875rem;
+      box-sizing: content-box;
       outline: none;
     }
   }

@@ -49,12 +49,12 @@ const DatePicker: React.FC<DatePickerProps> = ({
           selected={selected}
           placeholderText="Select Date..."
           dateFormat={dateFormat}
-          renderCustomHeader={({ ...props }) => (
+          renderCustomHeader={({ ...headerProps }) => (
             <HeaderDatePicker
               isOpen={isOpen}
               onOpen={onOpen}
               onClose={onClose}
-              {...props}
+              {...headerProps}
             />
           )}
           {...props}
