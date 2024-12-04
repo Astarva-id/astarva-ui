@@ -61,7 +61,7 @@ export const Wrapper = styled(Flex)`
     border-radius: 0.375rem;
     margin: 0;
     padding: 0.1875rem;
-    width: 1.7rem;
+    box-sizing: content-box;
 
     &:hover {
       width: 1.7rem;
