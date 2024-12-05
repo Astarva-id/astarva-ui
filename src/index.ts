@@ -39,6 +39,6 @@ export * from "@components/TimePicker/TimePicker.types";
 export * from "@utils/globals";
 
 // Export Hooks
-export * from "@hooks/useClickOutside";
+export { default as useClickOutside } from "@hooks/useClickOutside";
 export * from "@hooks/useDebounce";
-export * from "@hooks/useDisclosure";
+export { default as useDisclosure } from "@hooks/useDisclosure";
