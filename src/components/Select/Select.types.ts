@@ -14,7 +14,7 @@ export interface SelectProps {
   placeholder?: string;
   maxHeight?: CSSProperties["maxHeight"];
   size?: "small" | "regular";
-  value: string;
+  value: string | number;
   onSelect: (options: Option) => void;
 }
 
