@@ -3,6 +3,7 @@ export { default as Box } from "@components/Box";
 export { default as Button } from "@components/Button";
 export { default as Colors } from "@components/Colors";
 export { default as DatePicker } from "@components/DatePicker";
+export { default as Disclosure } from "@components/Disclosure";
 export { default as Divider } from "@components/Divider";
 export { default as Drawer } from "@components/Drawer";
 export { default as Flex } from "@components/Flex";
@@ -15,6 +16,7 @@ export { default as Select } from "@components/Select";
 export { default as Skeleton } from "@components/Skeleton";
 export { default as Switch } from "@components/Switch";
 export { default as Text } from "@components/Text";
+export { default as TextArea } from "@components/TextArea";
 export { default as TimePicker } from "@components/TimePicker";
 
 // Export Component Interfaces
@@ -33,6 +35,7 @@ export * from "@components/Select/Select.types";
 export * from "@components/Skeleton/Skeleton.types";
 export * from "@components/Switch/Switch.types";
 export * from "@components/Text/Text.types";
+export * from "@components/TextArea/TextArea.types";
 export * from "@components/TimePicker/TimePicker.types";
 
 // Export Utils

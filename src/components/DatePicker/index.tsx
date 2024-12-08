@@ -32,7 +32,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
   return (
     <Flex flexDirection="column" gap=".5rem" width="100%">
       {label && (
-        <Text color="black800" variant="small" weight="medium" {..._textStyle}>
+        <Text color="black900" weight="medium" {..._textStyle}>
           {label}
         </Text>
       )}
