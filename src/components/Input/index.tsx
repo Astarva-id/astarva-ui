@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react";
 
 import { InputWrapper, PlainInput, StyledInput } from "./Input.styled";
 import { AllInput, InputProps } from "./Input.types";
+import { InputNumber } from "./InputNumber";
 import { InputPassword } from "./InputPassword";
 
 export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
@@ -131,6 +132,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
 export const Input = {
   ...ForwardRefInput,
   Password: InputPassword,
+  Number: InputNumber,
 } as AllInput;
 
 export default Input;
