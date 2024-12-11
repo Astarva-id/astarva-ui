@@ -38,6 +38,9 @@ export * from "@components/Text/Text.types";
 export * from "@components/TextArea/TextArea.types";
 export * from "@components/TimePicker/TimePicker.types";
 
+// Export Constants
+export * from "@constants/icons";
+
 // Export Utils
 export * from "@utils/globals";
 

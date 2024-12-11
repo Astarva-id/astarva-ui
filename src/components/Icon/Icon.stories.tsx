@@ -29,6 +29,8 @@ export const AllIcon: React.FC = () => {
         }
       });
 
+    console.log("groups: ", groups);
+
     return groups;
   };
 

@@ -1,58 +1,11 @@
 import { colorIndex } from "@components/Colors/Colors.types";
+import { iconOutline, iconSolid } from "@constants/icons";
 import { IconProps as IcomoonProps } from "react-icomoon";
 
-export type IconNames =
-  | "Activity-outline"
-  | "Activity-solid"
-  | "Alarm-outline"
-  | "Alarm-solid"
-  | "Alert-Triangle-outline"
-  | "Alert-Triangle-solid"
-  | "Arrow-Down-outline"
-  | "Arrow-Left-outline"
-  | "Arrow-Right-outline"
-  | "Arrow-Up-outline"
-  | "Calendar-outline"
-  | "Calendar-solid"
-  | "Chart-outline"
-  | "Chart-solid"
-  | "Check-solid"
-  | "Checkmark-outline"
-  | "Close-solid"
-  | "Down-outline"
-  | "Eye-outline"
-  | "Eye-solid"
-  | "Filter-outline"
-  | "Filter-solid"
-  | "Flame-solid"
-  | "Grid-outline"
-  | "Grid-solid"
-  | "Hide-outline"
-  | "Hide-solid"
-  | "Home-outline"
-  | "Home-solid"
-  | "Info-outline"
-  | "Instant-outline"
-  | "Instant-solid"
-  | "Left-outline"
-  | "Line-Chart-outline"
-  | "Line-Chart-solid"
-  | "Magnifier-outline"
-  | "Pause-solid"
-  | "Person-outline"
-  | "Person-solid"
-  | "Pie-Chart-outline"
-  | "Pie-Chart-solid"
-  | "Play-solid"
-  | "Plus-solid"
-  | "Right-outline"
-  | "Time-Circle-outline"
-  | "Time-Circle-solid"
-  | "Time-Square-outline"
-  | "Time-Square-solid"
-  | "Trash-outline"
-  | "Trash-solid"
-  | "Up-outline";
+export type IconOutlineTypes = (typeof iconOutline)[number];
+export type IconSolidTypes = (typeof iconSolid)[number];
+
+export type IconNames = IconOutlineTypes | IconSolidTypes;
 
 export type IconProps = Omit<IcomoonProps, "icon" | "color"> & {
   name: IconNames & IconNames;
