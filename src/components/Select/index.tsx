@@ -19,6 +19,7 @@ const Select: React.FC<SelectProps> = ({
   placeholder = "Select Your Input...",
   size = "regular",
   value,
+  _label,
   onSelect,
   ...props
 }) => {
@@ -34,8 +35,12 @@ const Select: React.FC<SelectProps> = ({
   };
 
   return (
-    <Flex flexDirection="column" gap=".5rem">
-      <Text weight="semi-bold">{label}</Text>
+    <Flex flexDirection="column" gap=".625rem">
+      {label && (
+        <Text weight="medium" color="black900" {..._label}>
+          {label}
+        </Text>
+      )}
 
       <InputSelect
         ref={menuRef}

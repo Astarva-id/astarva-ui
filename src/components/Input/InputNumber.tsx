@@ -19,6 +19,7 @@ export const InputNumber = React.forwardRef<HTMLInputElement, InputNumberProps>(
       placeholder = "Input Something..",
       suffix,
       prefix,
+      _label,
       onBlur,
       onFocus,
       onChange,
@@ -75,7 +76,7 @@ export const InputNumber = React.forwardRef<HTMLInputElement, InputNumberProps>(
     return (
       <Flex flexDirection="column" gap=".625rem" onClick={onClickInput}>
         {label && (
-          <Text weight="medium" color="black900">
+          <Text color="black900" weight="medium" {..._label}>
             {label}
           </Text>
         )}

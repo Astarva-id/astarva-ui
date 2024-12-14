@@ -29,6 +29,7 @@ export interface InputPasswordProps
   noBorder?: boolean;
   error?: string;
   label?: string;
+  _label?: TextProps;
   value?: string;
 }
 
@@ -42,6 +43,7 @@ export interface InputNumberProps
   hint?: string;
   noBorder?: boolean;
   error?: string;
+  _label?: TextProps;
   label?: string;
   value?: string;
   prefix?: ReactNode;

@@ -70,6 +70,14 @@ export const SingleSelect: React.FC = () => {
         onSelect={handleSelect}
       />
       <Select
+        label="Select Category - Small"
+        size="small"
+        disabled
+        value={selectValue}
+        options={options}
+        onSelect={handleSelect}
+      />
+      <Select
         label="Select Category - Error"
         size="small"
         isError

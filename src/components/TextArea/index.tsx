@@ -6,11 +6,11 @@ import { StyledTextArea } from "./TextArea.styled";
 import { TextAreaProps } from "./TextArea.types";
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
-  ({ label, isError, error, hint, value, ...restProps }, ref) => {
+  ({ label, _label, isError, error, hint, value, ...restProps }, ref) => {
     return (
       <Flex flexDirection="column" gap=".625rem">
         {label && (
-          <Text weight="medium" color="black900">
+          <Text weight="medium" color="black900" {..._label}>
             {label}
           </Text>
         )}

@@ -5,7 +5,7 @@ import {
 } from "react-datepicker";
 
 export type DatePickerProps = ReactDatePickerProps & {
-  _textStyle?: TextProps;
+  _label?: TextProps;
   label?: string;
 };
 

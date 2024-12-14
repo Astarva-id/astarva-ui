@@ -20,7 +20,7 @@ import { DatePickerHeaderProps, DatePickerProps } from "./DatePicker.types";
 const DatePicker: React.FC<DatePickerProps> = ({
   dateFormat = "dd/MM/YYYY",
   selected,
-  _textStyle,
+  _label,
   label,
   ...props
 }) => {
@@ -30,9 +30,9 @@ const DatePicker: React.FC<DatePickerProps> = ({
   useClickOutside(selectMonthYearRef, onClose);
 
   return (
-    <Flex flexDirection="column" gap=".5rem" width="100%">
+    <Flex flexDirection="column" gap=".625rem" width="100%">
       {label && (
-        <Text color="black900" weight="medium" {..._textStyle}>
+        <Text color="black900" weight="medium" {..._label}>
           {label}
         </Text>
       )}

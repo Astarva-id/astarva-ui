@@ -13,6 +13,7 @@ export const InputPassword = React.forwardRef<
   (
     {
       label,
+      _label,
       isError,
       size = "regular",
       error,
@@ -50,7 +51,7 @@ export const InputPassword = React.forwardRef<
     return (
       <Flex flexDirection="column" gap=".625rem" onClick={onClickInput}>
         {label && (
-          <Text weight="medium" color="black900">
+          <Text color="black900" weight="medium" {..._label}>
             {label}
           </Text>
         )}

@@ -118,38 +118,28 @@ export const InputText: React.FC = () => (
         >
           <Input
             label="Email"
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             disabled
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             noBorder
             disabled
             placeholder="Input without border"
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             hint="HINT. max character 28 char"
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             isError
             error="Field is required"
@@ -252,42 +242,32 @@ export const InputText: React.FC = () => (
         <Text>Input Text - Small</Text>
         <Flex flexDirection="column" gap=".5rem" minWidth="18.75rem">
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             label="Password"
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             disabled
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             disabled
             noBorder
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             hint="HINT"
           />
           <Input
-            prefix={
-              <Icon name="Info-Circle-outline" size={20} color="black200" />
-            }
+            prefix={<Icon name="Info-outline" size={20} color="black200" />}
             sufix={<Icon name="Eye-outline" size={20} color="black200" />}
             size="small"
             isError

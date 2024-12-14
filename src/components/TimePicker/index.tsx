@@ -2,23 +2,16 @@ import colors from "@components/Colors";
 import Flex from "@components/Flex";
 import ScrollBar from "@components/ScrollBar";
 import Text from "@components/Text";
-import { TextProps } from "@components/Text/Text.types";
 import useClickOutside from "@hooks/useClickOutside";
 import useDisclosure from "@hooks/useDisclosure";
 import { lodash } from "@utils/lodash";
 import React, { useEffect, useRef, useState } from "react";
 
 import { Time } from "./TimePicker.styled";
-
-interface TimePickerProps {
-  _textStyle?: TextProps;
-  label?: string;
-  value?: string;
-  onSelect?: (value: string) => void;
-}
+import { TimePickerProps } from "./TimePicker.types";
 
 const TimePicker: React.FC<TimePickerProps> = ({
-  _textStyle,
+  _label,
   label,
   value = "00:00",
   onSelect,
@@ -74,9 +67,9 @@ const TimePicker: React.FC<TimePickerProps> = ({
   }, [isOpen]);
 
   return (
-    <Flex flexDirection="column" gap=".5rem">
+    <Flex flexDirection="column" gap=".625rem">
       {label && (
-        <Text color="black800" variant="small" weight="medium" {..._textStyle}>
+        <Text weight="medium" color="black900" {..._label}>
           {label}
         </Text>
       )}

@@ -25,6 +25,13 @@ export const InputSelect = styled(Flex)<InputSelectProps>`
   cursor: pointer;
 
   ${(props) =>
+    props.disabled &&
+    css`
+      cursor: not-allowed;
+      background-color: ${colors.black50};
+    `}
+
+  ${(props) =>
     props.isError &&
     css`
       border: 0.0625rem solid ${colors.red500};
