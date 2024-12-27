@@ -32,6 +32,17 @@ const colors = {
   green100: "#b6ecde",
   green50: "#e7f9f5",
 
+  yellow900: "#7c350b",
+  yellow800: "#984008",
+  yellow700: "#bb5302",
+  yellow600: "#e27a00",
+  yellow500: "#ffa200",
+  yellow400: "#ffc51b",
+  yellow300: "#ffd846",
+  yellow200: "#ffea85",
+  yellow100: "#fff4c5",
+  yellow50: "#fffcea",
+
   greenyellow900: "#3a5710",
   greenyellow800: "#45670d",
   greenyellow700: "#558209",
