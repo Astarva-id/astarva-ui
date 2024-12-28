@@ -1,4 +1,3 @@
-import colors from "@components/Colors";
 import Flex from "@components/Flex";
 import ScrollBar from "@components/ScrollBar";
 import Text from "@components/Text";
@@ -14,6 +13,9 @@ const TimePicker: React.FC<TimePickerProps> = ({
   _label,
   label,
   value = "00:00",
+  isError,
+  error,
+  hint,
   onSelect,
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure({ open: false });
@@ -75,7 +77,8 @@ const TimePicker: React.FC<TimePickerProps> = ({
       )}
       <Flex
         position="relative"
-        border={`.0625rem solid ${colors.black100}`}
+        border=".0625rem solid"
+        borderColor={isError ? "red400" : "black100"}
         borderRadius=".375rem"
         justifyContent="center"
         alignItems="center"
@@ -154,6 +157,16 @@ const TimePicker: React.FC<TimePickerProps> = ({
           </Flex>
         )}
       </Flex>
+      {isError && error && (
+        <Text variant="extra-small" weight="light" color="red500">
+          {error}
+        </Text>
+      )}
+      {!isError && hint && (
+        <Text variant="extra-small" weight="light" color="black400">
+          {hint}
+        </Text>
+      )}
     </Flex>
   );
 };

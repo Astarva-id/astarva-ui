@@ -14,8 +14,15 @@ export const AllTimePicker = () => {
   const [time, setTime] = useState(undefined);
   return (
     <Flex flexDirection="column" rowGap="1rem" fontFamily="sans-serif">
-      <TimePicker value={time} label="Time Picker" onSelect={setTime} />
       <TimePicker />
+      <TimePicker value={time} label="Time Picker" onSelect={setTime} />
+      <TimePicker
+        value={time}
+        label="Time Picker"
+        isError
+        error="Time Picker is required"
+        onSelect={setTime}
+      />
     </Flex>
   );
 };

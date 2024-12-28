@@ -93,7 +93,7 @@ const Select: React.FC<SelectProps> = ({
       </InputSelect>
 
       {isError && (
-        <Text variant="small" color="red500">
+        <Text variant="extra-small" color="red500">
           {error}
         </Text>
       )}
