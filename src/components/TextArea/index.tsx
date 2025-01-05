@@ -42,7 +42,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
     };
 
     useEffect(() => {
-      setTextValue(value);
+      if (value) setTextValue(value);
     }, [value]);
 
     return (

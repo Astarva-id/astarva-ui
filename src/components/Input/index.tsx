@@ -67,7 +67,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
     };
 
     useEffect(() => {
-      setTextValue(value);
+      if (value) setTextValue(value);
     }, [value]);
 
     return (
