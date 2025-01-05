@@ -1,6 +1,6 @@
 import Flex from "@components/Flex";
 import Text from "@components/Text";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { InputWrapper, PlainInput, StyledInput } from "./Input.styled";
 import { AllInput, InputProps } from "./Input.types";
@@ -23,6 +23,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
       isPlain = true,
       maxLength,
       placeholder = "Input Something..",
+      value,
       onBlur,
       onChange,
       onFocus,
@@ -64,6 +65,10 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
       setIsFocus(false);
       onBlur?.(event);
     };
+
+    useEffect(() => {
+      setTextValue(value);
+    }, [value]);
 
     return (
       <Flex flexDirection="column" gap=".625rem" onClick={onClickInput}>

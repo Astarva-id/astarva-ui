@@ -1,13 +1,23 @@
 import Flex from "@components/Flex";
 import Text from "@components/Text";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { StyledTextArea } from "./TextArea.styled";
 import { TextAreaProps } from "./TextArea.types";
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
   (
-    { label, _label, isError, error, hint, maxLength, onChange, ...restProps },
+    {
+      label,
+      _label,
+      isError,
+      error,
+      hint,
+      maxLength,
+      value,
+      onChange,
+      ...restProps
+    },
     ref
   ) => {
     const textareaRef =
@@ -30,6 +40,10 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
         return onChange?.(event);
       }
     };
+
+    useEffect(() => {
+      setTextValue(value);
+    }, [value]);
 
     return (
       <Flex flexDirection="column" gap=".625rem">
