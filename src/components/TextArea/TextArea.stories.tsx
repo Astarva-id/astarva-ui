@@ -1,6 +1,6 @@
 import Flex from "@components/Flex";
 import { Meta } from "@storybook/react";
-import React, { useState } from "react";
+import React from "react";
 
 import TextArea from ".";
 import { TextAreaProps } from "./TextArea.types";
@@ -13,8 +13,6 @@ const meta: Meta<TextAreaProps> = {
 export default meta;
 
 export const TextAreaAll: React.FC = () => {
-  const [value, setValue] = useState("");
-
   return (
     <Flex flexDirection="column" gap="3rem" maxWidth="800px">
       <Flex flexDirection="column" gap="1.5rem">
@@ -22,12 +20,7 @@ export const TextAreaAll: React.FC = () => {
 
         <TextArea disabled />
         <TextArea disabled placeholder="Input without border" />
-        <TextArea
-          value={value}
-          hint="HINT. max character 28 char"
-          maxLength={1000}
-          onChange={(event) => setValue(event.currentTarget.value)}
-        />
+        <TextArea hint="HINT. max character 28 char" maxLength={1000} />
         <TextArea
           isError
           error="Field is required"

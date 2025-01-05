@@ -1,6 +1,6 @@
 import Flex from "@components/Flex";
 import Text from "@components/Text";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import { StyledTextArea } from "./TextArea.styled";
 import { TextAreaProps } from "./TextArea.types";
@@ -14,12 +14,16 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       (ref as React.MutableRefObject<HTMLTextAreaElement>) ||
       useRef<HTMLTextAreaElement>(null);
 
+    const [textValue, setTextValue] = useState("");
+
     const handleOnChange = (event: React.FormEvent<HTMLTextAreaElement>) => {
+      const value = event.currentTarget.value;
+
       if (maxLength) {
-        if (event.currentTarget.value.length <= maxLength) {
+        if (value.length <= maxLength) {
+          setTextValue(value);
           return onChange?.(event);
         }
-        const value = event.currentTarget.value;
         event.currentTarget.value = value.substring(0, maxLength);
         return onChange?.(event);
       } else {
@@ -54,7 +58,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
               backgroundColor="white"
             >
               <Text variant="extra-small" color="black400">
-                {textareaRef.current?.value.length || 0} / {maxLength}
+                {textValue.length || 0} / {maxLength}
               </Text>
             </Flex>
           )}

@@ -34,17 +34,20 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
       (ref as React.MutableRefObject<HTMLInputElement>) ||
       useRef<HTMLInputElement>(null);
     const [isFocus, setIsFocus] = useState(false);
+    const [textValue, setTextValue] = useState("");
 
     const onClickInput = () => {
       if (inputRef.current) inputRef.current.focus();
     };
 
     const handleOnChange = (event: React.FormEvent<HTMLInputElement>) => {
+      const value = event.currentTarget.value;
+
       if (maxLength) {
-        if (event.currentTarget.value.length <= maxLength) {
+        if (value.length <= maxLength) {
+          setTextValue(value);
           return onChange?.(event);
         }
-        const value = event.currentTarget.value;
         event.currentTarget.value = value.substring(0, maxLength);
         return onChange?.(event);
       } else {
@@ -106,7 +109,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
               {maxLength && (
                 <Flex position="absolute" right="10px" bottom="6px">
                   <Text variant="extra-small" color="black400">
-                    {inputRef.current?.value.length || 0} / {maxLength}
+                    {textValue.length || 0} / {maxLength}
                   </Text>
                 </Flex>
               )}
