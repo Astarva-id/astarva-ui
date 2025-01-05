@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { TextAreaProps } from "./TextArea.types";
 
 export const StyledTextArea: React.FC<TextAreaProps> = styled.textarea<TextAreaProps>`
+  width: 100%;
   border-radius: 0.5rem;
   border: solid 0.0625rem
     ${(props) => (props.isError ? colors.red500 : colors.black100)};

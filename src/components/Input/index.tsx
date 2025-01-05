@@ -102,16 +102,26 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
               {sufix}
             </InputWrapper>
           ) : (
-            <StyledInput
-              ref={inputRef}
-              size={size}
-              noBorder={noBorder}
-              placeholder={placeholder}
-              disabled={disabled}
-              isError={isError}
-              onChange={handleOnChange}
-              {...restProps}
-            />
+            <Flex position="relative">
+              {maxLength && (
+                <Flex position="absolute" right="10px" bottom="6px">
+                  <Text variant="extra-small" color="black400">
+                    {restProps?.value?.length || 0} / {maxLength}
+                  </Text>
+                </Flex>
+              )}
+
+              <StyledInput
+                ref={inputRef}
+                size={size}
+                noBorder={noBorder}
+                placeholder={placeholder}
+                disabled={disabled}
+                isError={isError}
+                onChange={handleOnChange}
+                {...restProps}
+              />
+            </Flex>
           )}
           {isError && error && (
             <Text variant="extra-small" weight="light" color="red500">

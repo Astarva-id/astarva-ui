@@ -20,6 +20,8 @@ export const InputNumber = React.forwardRef<HTMLInputElement, InputNumberProps>(
       suffix,
       prefix,
       _label,
+      min,
+      max,
       onBlur,
       onFocus,
       onChange,
@@ -32,9 +34,15 @@ export const InputNumber = React.forwardRef<HTMLInputElement, InputNumberProps>(
       useRef<HTMLInputElement>(null);
     const [isFocus, setIsFocus] = useState(false);
 
+    const handleMinMax = (value: number) => {
+      if (min !== undefined && value < Number(min)) return Number(min);
+      if (max !== undefined && value > Number(max)) return Number(max);
+      return value;
+    };
+
     const numberInputChecking = (val: string) => {
       const cleansingValue = val.replace(/\D/g, "");
-      const parsedValue = parseInt(cleansingValue);
+      const parsedValue = handleMinMax(Number(cleansingValue || ""));
       const formattedValue = new Intl.NumberFormat(["id"]).format(
         parsedValue || 0
       );

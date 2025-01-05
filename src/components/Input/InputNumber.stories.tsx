@@ -20,6 +20,8 @@ export const InputNumber: React.FC = () => (
       <Flex flexDirection="column" gap=".5rem">
         <Input.Number label="Number" />
 
+        <Input.Number min={10} label="Min Number" />
+        <Input.Number max={99} label="Max Number" />
         <Input.Number disabled />
         <Input.Number noBorder disabled placeholder="Input without border" />
         <Input.Number hint="HINT. max character 28 char" />
