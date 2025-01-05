@@ -1,25 +1,19 @@
 import Flex from "@components/Flex";
 import Text from "@components/Text";
-import React from "react";
+import React, { useRef } from "react";
 
 import { StyledTextArea } from "./TextArea.styled";
 import { TextAreaProps } from "./TextArea.types";
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
   (
-    {
-      label,
-      _label,
-      isError,
-      error,
-      hint,
-      value,
-      maxLength,
-      onChange,
-      ...restProps
-    },
+    { label, _label, isError, error, hint, maxLength, onChange, ...restProps },
     ref
   ) => {
+    const textareaRef =
+      (ref as React.MutableRefObject<HTMLTextAreaElement>) ||
+      useRef<HTMLTextAreaElement>(null);
+
     const handleOnChange = (event: React.FormEvent<HTMLTextAreaElement>) => {
       if (maxLength) {
         if (event.currentTarget.value.length <= maxLength) {
@@ -44,8 +38,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
         <Flex flex={1} position="relative">
           <StyledTextArea
             placeholder="Input here..."
-            value={value}
-            ref={ref}
+            ref={textareaRef}
             isError={isError}
             onChange={handleOnChange}
             {...restProps}
@@ -61,7 +54,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
               backgroundColor="white"
             >
               <Text variant="extra-small" color="black400">
-                {value?.length} / {maxLength}
+                {textareaRef.current?.value.length || 0} / {maxLength}
               </Text>
             </Flex>
           )}

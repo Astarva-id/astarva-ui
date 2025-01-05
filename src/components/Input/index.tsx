@@ -106,7 +106,7 @@ export const ForwardRefInput = React.forwardRef<HTMLInputElement, InputProps>(
               {maxLength && (
                 <Flex position="absolute" right="10px" bottom="6px">
                   <Text variant="extra-small" color="black400">
-                    {restProps?.value?.length || 0} / {maxLength}
+                    {inputRef.current?.value.length || 0} / {maxLength}
                   </Text>
                 </Flex>
               )}
