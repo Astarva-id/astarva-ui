@@ -1,6 +1,7 @@
 // Export Component
 export { default as Box } from "@components/Box";
 export { default as Button } from "@components/Button";
+export { default as Checkbox } from "@components/Checkbox";
 export { default as Colors } from "@components/Colors";
 export { default as DatePicker } from "@components/DatePicker";
 export { default as Disclosure } from "@components/Disclosure";
@@ -22,6 +23,7 @@ export { default as TimePicker } from "@components/TimePicker";
 // Export Component Interfaces
 export * from "@components/Box/Box.types";
 export * from "@components/Button/Button.types";
+export * from "@components/Checkbox/Checkbox.types";
 export * from "@components/Colors/Colors.types";
 export * from "@components/DatePicker/DatePicker.types";
 export * from "@components/Divider/Divider.types";
