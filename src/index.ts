@@ -1,4 +1,5 @@
 // Export Component
+export { default as Alert } from "@components/Alert";
 export { default as Box } from "@components/Box";
 export { default as Button } from "@components/Button";
 export { default as Checkbox } from "@components/Checkbox";
@@ -22,6 +23,7 @@ export { default as TextArea } from "@components/TextArea";
 export { default as TimePicker } from "@components/TimePicker";
 
 // Export Component Interfaces
+export * from "@components/Alert/Alert.types";
 export * from "@components/Box/Box.types";
 export * from "@components/Button/Button.types";
 export * from "@components/Checkbox/Checkbox.types";
